@@ -44,11 +44,9 @@ let navbarTemplateSmallWindow = `
 
 document.getElementById('navbarTemplateId').innerHTML = navbarTemplate;
 
-currentLocation = document.getElementById("scriptNavbar").getAttribute("currentLocation");
+let currentLocation = document.getElementById("scriptNavbar").getAttribute("currentLocation");
+setSelectedPage()
 
-if (currentLocation) {
-    document.getElementById(currentLocation).style.color = "rgb(255, 123, 123)";
-}
 
 let smallWindowActive = false;
 
@@ -57,5 +55,12 @@ function setNavbarSmallScreen() {
         document.getElementById('navbarTemplateId').innerHTML = navbarTemplateSmallWindow;
     } else {
         document.getElementById('navbarTemplateId').innerHTML = navbarTemplate;
+    }
+    setSelectedPage()
+}
+
+function setSelectedPage() {
+    if (currentLocation) {
+        document.getElementById(currentLocation).style.color = "rgb(255, 123, 123)";
     }
 }
