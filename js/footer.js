@@ -32,4 +32,12 @@ let footer = `
 <!-- Footer End -->
 `;
 
-document.getElementById('footerTemplateId').innerHTML = footer;
+
+let delayFooter = document.getElementById("footerScript").getAttribute("delayFooter");
+
+setTimeout(function() {
+    
+    document.getElementById('footerTemplateId').innerHTML = footer;
+    lazyLoadInstance.update();
+
+  }, parseInt(delayFooter));

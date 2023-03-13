@@ -10,7 +10,7 @@ let testimonial = `
                         izvrsnoj usluzi pri transportu našeg tereta. Vaša pouzdanost i profesionalizam su bili iznad
                         očekivanja.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid rounded-circle" src="img/profile_photo_male.jpg" alt="profilna slika">
+                        <img class="img-fluid rounded-circle lazy" data-src="img/profile_photo_male.jpg" alt="profilna slika">
                         <div class="ps-4">
                             <h3>Jovan Petrović</h3>
                         </div>
@@ -21,7 +21,7 @@ let testimonial = `
                         zahvaliti vašoj firmi na brzom i efikasnom transportu našeg tereta. Cenimo vaše stručno znanje i
                         izvrsnu uslugu koju ste nam pružili.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid rounded-circle" src="img/profile_photo_male.jpg" alt="profilna slika">
+                        <img class="img-fluid rounded-circle lazy" data-src="img/profile_photo_male.jpg" alt="profilna slika">
                         <div class="ps-4">
                             <h3>Thomas Müller</h3>
                         </div>
@@ -32,7 +32,7 @@ let testimonial = `
                         sjajnoj usluzi pri transportu naše robe. Vaša ljubaznost i pažljivo rukovanje našom robom su
                         bili izvrsni, a vaši vozači su bili vrlo profesionalni.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid rounded-circle" src="img/profile_photo_female.jpg" alt="profilna slika">
+                        <img class="img-fluid rounded-circle lazy" data-src="img/profile_photo_female.jpg" alt="profilna slika">
                         <div class="ps-4">
                             <h3>Ivana Popović</h3>
                         </div>
@@ -43,7 +43,7 @@ let testimonial = `
                         firmi za sjajnu uslugu pri transportu našeg tereta. Vaša brzina, pouzdanost i pažnja prema našoj
                         robi su nas oduševili. Radujemo se budućoj saradnji sa vama.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid rounded-circle" src="img/profile_photo_male.jpg" alt="profilna slika">
+                        <img class="img-fluid rounded-circle lazy" data-src="img/profile_photo_male.jpg" alt="profilna slika">
                         <div class="ps-4">
                             <h3>Aleksandar Janković</h3>
                         </div>
@@ -54,7 +54,7 @@ let testimonial = `
                         besprekornoj usluzi pri transportu našeg tereta. Vaša stručnost i briga za detalje su bili
                         impresivni, a vaša usluga je bila iznad očekivanja.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid rounded-circle" src="img/profile_photo_male.jpg" alt="profilna slika">
+                        <img class="img-fluid rounded-circle lazy" data-src="img/profile_photo_male.jpg" alt="profilna slika">
                         <div class="ps-4">
                             <h3>Klaus Schmidt</h3>
                         </div>
@@ -65,7 +65,7 @@ let testimonial = `
                         izraziti našu zahvalnost za vašu profesionalnost i izvrsnu uslugu pri transportu naše robe. Vaša
                         brzina, pouzdanost i pažnja prema detaljima su bili neverovatni.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid rounded-circle" src="img/profile_photo_female.jpg" alt="profilna slika">
+                        <img class="img-fluid rounded-circle lazy" data-src="img/profile_photo_female.jpg" alt="profilna slika">
                         <div class="ps-4">
                             <h3>Jelena Stojanović</h3>
                         </div>
@@ -77,5 +77,7 @@ let testimonial = `
 </div>
 <!-- Testimonial End -->
 `;
+
+
 
 document.getElementById('testimonialTemplateId').innerHTML = testimonial;
