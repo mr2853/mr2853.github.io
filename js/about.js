@@ -3,7 +3,7 @@ let aboutHtmlText = `
 <div class="container-fluid bg-secondary p-0">
     <div class="row g-0">
         <div class="col-lg-6 py-6 px-5 smallMarginTopAboutUsTitle" id="aboutUsText">
-            <h1 class="display-5 mb-4 aboutUsTextTitle">Dobrodosli u <span class="text-primary">Transport Evropom</span></h1>
+            <h1 class="display-5 mb-4 aboutUsTextTitle">Dobrodošli u <span class="text-primary">Transport Evropom</span></h1>
             <h4 class="text-primary mb-4 aboutUsTextDescTitle">Brz, pouzdan i ekonomičan transport</h4>
             <p class="mb-4 aboutUsTextDesc">Mi smo firma za transport koja pruža širok spektar usluga prevoza robe i
                 opreme na teritoriji Evrope. Naša vozila su specijalno prilagođena za prevoz velikih tereta poput vozila

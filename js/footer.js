@@ -6,7 +6,7 @@ let footer = `
             <h3 class="text-white mb-4">Linkovi:</h3>
             <div class="d-flex flex-column justify-content-start">
                 <a class="text-secondary mb-2" href="index.html"><i
-                        class="bi bi-arrow-right text-primary me-2"></i>Pocetna</a>
+                        class="bi bi-arrow-right text-primary me-2"></i>Početna</a>
                 <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>O
                     nama</a>
                 <a class="text-secondary mb-2" href="gallery.html"><i

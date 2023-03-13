@@ -3,7 +3,7 @@ let testimonial = `
 <div class="container-fluid bg-secondary p-0">
     <div class="row g-0 testimonialDivCenter">
         <div class="col-lg-6 py-6 px-5">
-            <h1 class="display-5 mb-4">Sta nasi klijenti kazu!!!</h1>
+            <h1 class="display-5 mb-4">Šta naši klijenti kažu!!!</h1>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <p class="fs-2 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Hvala vam na
@@ -17,7 +17,7 @@ let testimonial = `
                     </div>
                 </div>
                 <div class="testimonial-item">
-                    <p class="fs-2 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Željeli bismo se
+                    <p class="fs-2 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Želeli bismo se
                         zahvaliti vašoj firmi na brzom i efikasnom transportu našeg tereta. Cenimo vaše stručno znanje i
                         izvrsnu uslugu koju ste nam pružili.</p>
                     <div class="d-flex align-items-center">
@@ -61,7 +61,7 @@ let testimonial = `
                     </div>
                 </div>
                 <div class="testimonial-item">
-                    <p class="fs-2 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Željeli bismo
+                    <p class="fs-2 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Želeli bismo
                         izraziti našu zahvalnost za vašu profesionalnost i izvrsnu uslugu pri transportu naše robe. Vaša
                         brzina, pouzdanost i pažnja prema detaljima su bili neverovatni.</p>
                     <div class="d-flex align-items-center">
