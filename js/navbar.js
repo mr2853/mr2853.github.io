@@ -44,6 +44,13 @@ let navbarTemplateSmallWindow = `
 
 document.getElementById('navbarTemplateId').innerHTML = navbarTemplate;
 
+// Uklanjanje elementa sa klasom "simplified-view"
+var simplifiedView = document.querySelector('.simplified-view');
+if(simplifiedView) {
+    simplifiedView.parentNode.removeChild(simplifiedView);
+}
+
+
 let currentLocation = document.getElementById("scriptNavbar").getAttribute("currentLocation");
 setSelectedPage()
 

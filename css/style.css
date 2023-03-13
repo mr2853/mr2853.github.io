@@ -6,6 +6,10 @@
     --dark: #152440;
 }
 
+.simplified-view-toggle {
+    display: none !important;
+ }
+ 
 h1,
 h2,
 .font-weight-bold {
