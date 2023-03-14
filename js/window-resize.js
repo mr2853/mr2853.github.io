@@ -4,7 +4,6 @@ window.addEventListener('resize', function () {
     currentLocation = document.getElementById("scriptNavbar").getAttribute("currentLocation");
     if(currentLocation == "homeTab") {
         changeLargeImages();
-        console.log("izmenjeno");
     }
     setNavbarSmallScreen();
 });
