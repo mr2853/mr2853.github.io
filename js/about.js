@@ -13,7 +13,7 @@ let aboutHtmlText = `
         </div>
 
         <div class="col-lg-6 smallMarginTopAboutUsTitle aboutUsImageDiv" style="width: fit-content;">
-            <img class="aboutUsImage" src="img/1.jpg">
+            <img class="aboutUsImage lazy" data-src="img/1.jpg" loading="lazy">
         </div>
     </div>
 </div>

@@ -32,9 +32,10 @@
     <!-- Template Stylesheet -->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.2.0/lazyload.min.js"></script>
 </head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TF35R6TLG"></script>
+<script id="googleMainScript"></script>
 
 <script src="js\google.js"></script>
 
@@ -47,7 +48,7 @@
     </div>
     <!-- Page Header End -->
 
-    <div id="galleryTemplateId"></div>
+    <div id="galleryTemplateId1"></div>
 
     <div id="footerTemplateId"></div>
 
@@ -58,16 +59,18 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script id="delayScript2"></script>
+    <script id="delayScript3"></script>
+    <script id="delayScript4"></script>
+    <script id="delayScript5"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js\footer.js"></script>
+    <script id="footerScript" src="js\footer.js" delayFooter="6000"></script>
     <script src="js\gallery.js"></script>
     <script id="scriptNavbar" currentLocation="galleryTab" src="js\navbar.js"></script>
+    <script src="js\lazy-load.js"></script>
+    <script src="js\window-resize.js"></script>
     </body>
 
 </html>

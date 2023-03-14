@@ -663,7 +663,7 @@ nav {
 
     .nameOfThePage {
         height: 130px;
-        margin-top: 120px;
+        margin-top: 140px;
     }
 }
 
@@ -957,7 +957,7 @@ nav {
 @media (min-width:1300px) and (max-width:1840px) {
     .nameOfThePage {
         height: 100px;
-        margin-top: 130px;
+        margin-top: 150px;
     }
 }
 
@@ -1199,7 +1199,7 @@ nav {
     }
 
     .nameOfThePage {
-        margin-top: 280px;
+        margin-top: 290px;
     }
 
     /* .fitImageHeavyService {
@@ -1294,7 +1294,7 @@ nav {
     }
 
     .nameOfThePage {
-        margin-top: 240px;
+        margin-top: 280px;
     }
 
     .fitImageHeavyService {
@@ -1607,7 +1607,7 @@ nav {
     }
 
     .nameOfThePage {
-        margin-top: 200px;
+        margin-top: 240px;
     }
 
     .marginTop {
@@ -1643,7 +1643,7 @@ nav {
     }
 
     .nameOfThePage {
-        margin-top: 170px;
+        margin-top: 200px;
     }
 
     .marginTop {
@@ -1679,7 +1679,7 @@ nav {
     }
 
     .nameOfThePage {
-        margin-top: 155px;
+        margin-top: 175px;
     }
 
     .marginTop {
