@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kontakt</title>
+    <title id="pageHeaderTitle">Kontakt</title>
     <meta name="description"
         content="Saznajte kako nas možete kontaktirati i zakažite vašu uslugu već danas. Naš tim stručnjaka je tu da vam pomogne.">
 
@@ -43,20 +43,20 @@
 
     <!-- Page Header Start -->
     <div class="container-fluid bg-dark p-5 nameOfThePage">
-        <h1 class="display-4 text-white">Kontakt</h1>
+        <h1 class="display-4 text-white" id="pageTitle"></h1>
     </div>
 
     <!-- Contact Start -->
     <div class="container-fluid py-5 wow fadeInUp contactDivListRoot" data-wow-delay="0.1s">
         <div class="container contactDivList">
-            <span class="alert-box success">Email je uspešno poslat. Odgovorićemo Vam u najkraćem roku. Hvala :)</span>
+            <span class="alert-box success" id="emailSentMessage"></span>
             <div class="row g-5 contactDivList smallMarginTop">
                 <div class="col-lg-7 wow slideInUp smallMarginTop" data-wow-delay="0.3s">
                     <div class="bg-light rounded smallMarginTop" id="firstDiv">
                         <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-12">
-                                    <h5 class="mb-1 contactInfoTitle">Pošaljite nam email:</h5>
+                                    <h5 class="mb-1 contactInfoTitle" id="formTitle"></h5>
                                 </div>
                                 <div class="col-12">
                                     <input id="name" type="text" name="name"
@@ -81,7 +81,7 @@
                                         name="message" rows="3" placeholder="Poruka" required></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Pošalji email</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="submitEmailButton"></button>
                                 </div>
                             </div>
                         </form>
@@ -92,7 +92,7 @@
                         <div class="d-flex align-items-center mb-2 smallMarginTop">
                             <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                             <div class="text-start">
-                                <h5 class="mb-1 contactInfoTitle">Naša lokacija:</h5>
+                                <h5 class="mb-1 contactInfoTitle" id="contactInfoTitle"></h5>
                                 <span class="contactInfoDesc">Vrbas, Srbija</span>
                             </div>
                         </div>
@@ -131,6 +131,7 @@
             class="bi bi-arrow-up"></i></a>
 
 
+    <script src="js/language-func.js"></script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script id="delayScript2"></script>

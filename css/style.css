@@ -699,31 +699,6 @@ nav {
     }
 }
 
-/* @media (min-width:1120px) and (max-width:780px) {
-    #homeTab,
-    #aboutTab,
-    #galleryTab,
-    #contactTab {
-        font-size: 9px;
-        min-width: 50px;
-    }
-
-    #fName,
-    #mob1,
-    #mob2 {
-        font-size: 9px;
-    }
-
-    #navbarElement {
-        font-size: 11px;
-    }
-
-    #logoWrapper {
-        font-size: 16px;
-        min-width: 50px;
-    }
-} */
-
 @media (min-width: 576px) and (max-width:870px) {
     .carousel-caption h5 {
         font-size: 24px;
@@ -743,21 +718,6 @@ nav {
         font-size: 60px;
     }
 }
-
-/* @media (min-width:0px) and (max-width:870px) {
-    .marginTop {
-        margin-top: 50px;
-    }
-
-    .imageDescriptionHome {
-        margin-bottom: 0%;
-        font-size: 10px;
-    }
-
-    .imageDescriptionHome2 {
-        font-size: 10px;
-    }
-} */
 
 @media (min-width:870px) and (max-width:1300px) {
     .marginTop {
@@ -968,165 +928,6 @@ nav {
     }
 }
 
-/* @media (min-width:1120px) and (max-width:1100px) {
-    #navbarElement {
-        height: 145px;
-    }
-}
-
-@media (min-width:1120px) and (max-width:1100px) {
-
-    #homeTab,
-    #aboutTab,
-    #galleryTab,
-    #contactTab {
-        font-size: 30px;
-        min-width: 80px;
-        width: 100%;
-    }
-
-    #fName,
-    #mob1,
-    #mob2 {
-        margin-top: 1%;
-        padding: 0%;
-        margin-bottom: 1%;
-        font-size: 23px;
-        margin-left: 2%;
-    }
-
-    #contantDetails {
-        margin-top: 1%;
-        padding: 0%;
-        margin-bottom: 1%;
-    }
-
-    #navbarElement {
-        font-size: 10px;
-        display: list-item;
-        padding: 0%;
-        padding-top: 5px;
-    }
-
-    #logoWrapper {
-        font-size: 23px;
-        min-width: 80px;
-        margin-left: 5%;
-    }
-
-    #pagesList {
-        margin-top: 0;
-        width: 100%;
-        margin-bottom: 5px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nameOfThePage {
-        margin-top: 100px;
-    }
-
-    .fitImageHeavyService {
-        width: 100%;
-        margin-top: 4%;
-        margin-bottom: 2%;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-
-    .fitDivImageHeavyService {
-        min-height: 120px;
-        max-height: 230px;
-        max-width: 360px;
-        width: 100%;
-        height: 100%;
-    }
-} */
-
-/* @media (min-width:1120px) and (max-width:970px) {
-    
-    #fName,
-    #mob1,
-    #mob2 {
-        font-size: 21px;
-        margin-left: 6%;
-    }
-
-    #mob1,
-    #mob2 {
-        margin-left: 10%;
-    }
-
-    #logoWrapper {
-        font-size: 20px;
-        min-width: 80px;
-        margin-left: 5%;
-    }
-} */
-
-/* @media (min-width:1120px) and (max-width:920px) {
-    
-    #fName,
-    #mob1,
-    #mob2 {
-        font-size: 21px;
-        margin-left: 2%;
-    }
-
-    #mob1,
-    #mob2 {
-        margin-left: 5%;
-    }
-
-    #logoWrapper {
-        font-size: 19px;
-        min-width: 80px;
-        margin-left: 5%;
-    }
-} */
-
-/* @media (min-width:1120px) and (max-width:900px) {
-    
-    #fName,
-    #mob1,
-    #mob2 {
-        font-size: 19px;
-        margin-left: 9%;
-    }
-
-    #mob1,
-    #mob2 {
-        margin-left: 15%;
-    }
-
-    #logoWrapper {
-        font-size: 19px;
-        min-width: 80px;
-        margin-left: 5%;
-    }
-} */
-
-/* @media (min-width:1120px) and (max-width:970px) {
-
-    #homeTab,
-    #aboutTab,
-    #galleryTab,
-    #contactTab {
-        font-size: 30px;
-        min-width: 80px;
-        width: 100%;
-    }
-
-    #aboutTab,
-    #galleryTab,
-    #contactTab {
-        margin-left: 30px;
-    }
-} */
 @media (min-width:770px) and (max-width:1120px) {
 
     #homeTab,
@@ -1202,21 +1003,6 @@ nav {
         margin-top: 290px;
     }
 
-    /* .fitImageHeavyService {
-        width: 100%;
-        margin-top: 800px;
-        margin-bottom: 2%;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-
-    .fitDivImageHeavyService {
-        min-height: 110px;
-        max-height: 230px;
-        max-width: 360px;
-        width: 100%;
-        height: 100%;
-    } */
 
     #navbarElement {
         height: 290px;
@@ -1328,43 +1114,6 @@ nav {
     }
 }
 
-/* @media (min-width:700px) and (max-width:1120px) {
-
-    #navbarElement {
-        height: 190px;
-    }
-
-    .nameOfThePage {
-        margin-top: 150px;
-    }
-}
-
-@media (min-width:650px) and (max-width:700px) {
-
-    #navbarElement {
-        height: 185px;
-    }
-
-}
-
-@media (min-width:600px) and (max-width:650px) {
-
-    #navbarElement {
-        height: 180px;
-    }
-
-}
-
-@media (min-width:550px) and (max-width:600px) {
-
-    #navbarElement {
-        height: 185px;
-    }
-
-    .nameOfThePage {
-        margin-top: 150px;
-    }
-} */
 
 @media (min-width:580px) and (max-width:1100px) {
 
@@ -1372,10 +1121,6 @@ nav {
         /* font-size: 23px; */
         line-height: 30px;
     }
-
-    /* .imageDescriptionHomeFont {
-        font-size: 17px;
-    } */
     
     .paddingChange {
         padding: 5px;
@@ -1405,88 +1150,8 @@ nav {
     }
 }
 
-/* 
-@media (min-width:450px) and (max-width:550px) {
-
-    #navbarElement {
-        height: 180px;
-    }
-
-    .nameOfThePage {
-        margin-top: 140px;
-    }
-
-    .imageDescriptionHomeFontTitle {
-        font-size: 16px;
-        line-height: 16px;
-    }
-
-    .imageDescriptionHomeFont {
-        font-size: 10px;
-    }
-
-    .paddingChange {
-        padding: 3px;
-    }
-} */
-
-/* @media (min-width:400px) and (max-width:450px) {
-
-    #navbarElement {
-        height: 175px;
-    }
-
-    .nameOfThePage {
-        margin-top: 130px;
-    }
-
-    .imageDescriptionHomeFontTitle {
-        font-size: 16px;
-        line-height: 16px;
-    }
-
-    .imageDescriptionHomeFont {
-        font-size: 10px;
-    }
-
-    .paddingChange {
-        padding: 3px;
-    }
-} */
-
-/* @media (min-width:315px) and (max-width:400px) {
-
-    #navbarElement {
-        height: 160px;
-    }
-
-    .nameOfThePage {
-        margin-top: 120px;
-    }
-}
-
-@media (min-width:100px) and (max-width:315px) {
-
-    #navbarElement {
-        height: 160px;
-    }
-
-    .nameOfThePage {
-        margin-top: 130px;
-    }
-} */
 
 @media (min-width:50px) and (max-width:770px) {
-
-    /* #homeTab,
-    #aboutTab,
-    #galleryTab,
-    #contactTab {
-        font-size: 29px;
-        min-width: 40px;
-        width: 100%;
-        margin-bottom: 5px;
-    } */
 
     .paddingChange {
         padding: 3px;
