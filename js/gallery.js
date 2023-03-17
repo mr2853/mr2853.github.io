@@ -95,10 +95,11 @@ let gallery2 = `
 
 document.getElementById('galleryTemplateId1').innerHTML = gallery1;
 
-if(navigator.language.indexOf("en") != -1) {
+const lang = navigator.language;
+if(lang.indexOf("en") != -1) {
     document.getElementById("pageTitle").innerHTML = "Gallery";
 
-} else if(navigator.language.indexOf("de") != -1) {
+} else if(lang.indexOf("de") != -1) {
     document.getElementById("pageTitle").innerHTML = "Galerie";
     
 } else {

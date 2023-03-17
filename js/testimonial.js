@@ -167,7 +167,7 @@ let testimonialEnglish = `
                     <div class="d-flex align-items-center">
                         <img class="img-fluid rounded-circle lazy" data-src="img/profile_photo_male.jpg" alt="profilna slika">
                         <div class="ps-4">
-                            <h3>Lena Müller/h3>
+                            <h3>Lena Müller</h3>
                         </div>
                     </div>
                 </div>

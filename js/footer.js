@@ -103,10 +103,11 @@ let delayFooter = document.getElementById("footerScript").getAttribute("delayFoo
 
 setTimeout(function() {
     
-    if(navigator.language.indexOf("en") != -1) {
+    const lang = navigator.language;
+    if(lang.indexOf("en") != -1) {
         document.getElementById('footerTemplateId').innerHTML = footerEnglish;
 
-    } else if(navigator.language.indexOf("de") != -1) {
+    } else if(lang.indexOf("de") != -1) {
         document.getElementById('footerTemplateId').innerHTML = footerGerman;
         
     } else {

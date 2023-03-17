@@ -17,9 +17,11 @@ let teamMember = `
 
 
 
+let delayMember = document.getElementById("memberScript").getAttribute("delayMember");
+
 setTimeout(function() {
     
     document.getElementById('team-memberTemplateId').innerHTML = teamMember;
     lazyLoadInstance.update();
 
-  }, 3000);
+  }, parseInt(delayMember));
