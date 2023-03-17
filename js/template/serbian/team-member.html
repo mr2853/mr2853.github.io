@@ -1,4 +1,3 @@
-let teamMember = `
 <!-- Team Start -->
 <div class="container-fluid py-6 px-5">
     <div class="row g-5">
@@ -13,15 +12,3 @@ let teamMember = `
     </div>
 </div>
 <!-- Team End -->
-`;
-
-
-
-let delayMember = document.getElementById("memberScript").getAttribute("delayMember");
-
-setTimeout(function() {
-    
-    document.getElementById('team-memberTemplateId').innerHTML = teamMember;
-    lazyLoadInstance.update();
-
-  }, parseInt(delayMember));
