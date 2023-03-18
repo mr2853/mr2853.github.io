@@ -54,8 +54,7 @@ if (simplifiedView) {
 let currentLocation = document.getElementById("scriptNavbar").getAttribute("currentLocation");
 setSelectedPage()
 
-
-let smallWindowActive = false;
+localStorage.setItem('transportEvropaPreferredLanguage', 'en');
 
 function setNavbarSmallScreen() {
     if (window.innerWidth < 770) {

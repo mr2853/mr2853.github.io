@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <script>
         
-        const baseUrl = "https://www.transport-evropa.com";
+        const baseUrl = "https://www.transport-evropa.com";;
 
-        const lang = navigator.language;
+        const preferredLanguage = localStorage.getItem('transportEvropaPreferredLanguage');
+
+        const lang = preferredLanguage != null ? preferredLanguage : navigator.language;
+
         if(lang.indexOf("de") != -1) {
             window.location.href = baseUrl + '/fahrzeugtransport-europa.html';
 
