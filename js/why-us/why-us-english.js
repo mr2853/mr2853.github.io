@@ -1,0 +1,118 @@
+let whyUsEnglish = `
+<!-- Features Start -->
+<div class="container-fluid py-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 mb-0 textRootTitleWhyUs">Why choose us?</h1>
+        <hr class="w-25 mx-auto bg-primary">
+    </div>
+    <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 smallMarginTopWhyUs"
+                        style="width: 90px; height: 90px;">
+                        <img data-src="img/icons/5.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleWhyUs">High quality service</h3>
+                    <p class="textDescService">We stand out for the high quality of service we provide to our clients.
+                        Every detail is carefully considered to ensure excellence in service delivery.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 smallMarginTopWhyUs"
+                        style="width: 90px; height: 90px;">
+                        <i class="fa fa-user-tie fa-3x"></i>
+                    </div>
+                    <h3 class="textTitleWhyUs">Professional approach</h3>
+                    <p class="textDescService">Our team consists of highly trained professionals who are dedicated to their jobs. They are always ready to provide clients with the best possible experience.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 smallMarginTopWhyUs"
+                        style="width: 90px; height: 90px;">
+                        <img data-src="img/icons/6.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleWhyUs">Reliability</h3>
+                    <p class="textDescService">Customers can be assured that their requests will be fulfilled within the agreed timeframe and in accordance with their expectations.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 smallMarginTopWhyUs"
+                        style="width: 90px; height: 90px;">
+                        <i class="fa fa-money-bill-wave fa-2x"></i>
+                    </div>
+                    <h3 class="textTitleWhyUs">Affordable prices</h3>
+                    <p class="textDescService">Our services are affordable, but that doesn't mean we compromise on quality. Our company strives to provide the best value for money to our clients.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 smallMarginTopWhyUs"
+                        style="width: 90px; height: 90px;">
+                        <img data-src="img/icons/1.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleWhyUs">Flexibility</h3>
+                    <p class="textDescService">Our company is very flexible when it comes to client requests. We can adapt to different client demands and provide services that best suit their needs.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 smallMarginTopWhyUs"
+                        style="width: 90px; height: 90px;">
+                        <img data-src="img/icons/4.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleWhyUs">Quality equipment</h3>
+                    <p class="textDescService">Our company uses state-of-the-art equipment and technology to provide services. Clients can be assured that their goods will be transported in safe vehicles equipped with the best technology for cargo safety.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 smallMarginTopWhyUs"
+                        style="width: 90px; height: 90px;">
+                        <img data-src="img/icons/3.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleWhyUs">Personalized approach</h3>
+                    <p class="textDescService">Our company approaches each client individually and strives to tailor its services to their needs. Our goal is to provide the best experience for each client.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 smallMarginTopWhyUs"
+                        style="width: 90px; height: 90px;">
+                        <img data-src="img/icons/2.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleWhyUs">Quick response</h3>
+                    <p class="textDescService">Fast response time is what we are known for. Our company prides itself on quickly responding to client inquiries and delivering services in the shortest possible time.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+`;
+
+
+
+setTimeout(function() {
+    
+    document.getElementById("why-usTemplateId").innerHTML = whyUsEnglish;
+    lazyLoadInstance.update();
+
+  }, 3000);

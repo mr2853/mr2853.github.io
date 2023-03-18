@@ -2,7 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://www.transport-evropa.com/prevoz-transport-vozila-evropa.html">
+    <script>
+        
+        const baseUrl = "https://www.transport-evropa.com";
+
+        const lang = navigator.language;
+        if(lang.indexOf("de") != -1) {
+            window.location.href = baseUrl + '/fahrzeugtransport-europa.html';
+
+        } else if(lang.indexOf("rs") != -1) {
+            window.location.href = baseUrl + '/prevoz-transport-vozila-evropa.html';
+            
+        } else {
+            window.location.href = baseUrl + '/vehicle-transportation-europe.html';
+        }
+    </script>
 </head>
 <body>
 </body>

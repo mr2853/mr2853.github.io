@@ -1,0 +1,122 @@
+let ourServicesSerbian = `
+<!-- Services Start -->
+<div class="container-fluid pt-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 mb-0 textRootTitleService">Naše usluge</h1>
+        <hr class="w-25 mx-auto bg-primary">
+    </div>
+    <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-prevoz-evropa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/12.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Transport vozila</h3>
+                    <p class="textDescWhyUs">Naša firma nudi siguran i pouzdan transport različitih vrsta vozila,
+                        uključujući automobile, motocikle, kamiončića i kombija do 3,5t i još mnogo toga. Naš kamion je
+                        opremljen da može prevoziti do dva vozila u isto vreme, tako da možemo udovoljiti svim
+                        vašim zahtevima za prevozom vozila.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-prevoz-evropa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageHeavyService">
+                        <img data-src="img/icons/8.gif" class="fitImageHeavyService lazy">
+                    </div>
+                    <h3 class="textTitleService">Transport tereta do 5t</h3>
+                    <p class="textDescWhyUs">Za transport velikih i teških predmeta poput građevinske opreme,
+                        industrijskih mašina ili drugih teških tereta, naš kamion je idealan za taj posao. Naša
+                        posada ima iskustvo u prevozu teških tereta, tako da možete biti sigurni da će vaša roba
+                        stići na odredište sigurno i bez problema.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-prevoz-evropa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/9.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Međunarodni transport</h3>
+                    <p class="textDescWhyUs">Naša firma pruža usluge međunarodnog transporta širom Evrope, uz
+                        poštovanje carinskih propisa i zakona zemalja u koje se roba transportuje. Naši vozači su
+                        obučeni da rade u različitim zemljama, što znači da se vaša roba transportuje pouzdano i
+                        brzo.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-prevoz-evropa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/10.gif" class="fitImageService lazy" style="margin-bottom: 15px;">
+                    </div>
+                    <h3 class="textTitleService">Specijalni transporti</h3>
+                    <p class="textDescWhyUs">Ako vam je potreban transport specijalne vrste robe, poput prevoza
+                        vozila sa invaliditetom ili drugih neobičnih tereta, naša firma može vam pomoći. Naši vozači
+                        su obučeni za specijalne transportne usluge, tako da možemo osigurati da vaša roba stigne na
+                        odredište bez problema.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-prevoz-evropa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/13.gif" class="fitImageService lazy" style="margin-bottom: 15px;">
+                    </div>
+                    <h3 class="textTitleService">Carinsko posredovanje</h3>
+                    <p class="textDescWhyUs">Naša firma vam nudi kompletnu uslugu carinskog posredovanja za vaše
+                        međunarodne pošiljke. Naš tim stručnjaka za carinske propise obezbeđuje da vaša roba prođe
+                        kroz carinski proces bez ikakvih problema ili zastoja. Pored toga, nudimo savetodavne usluge
+                        u vezi sa carinskim propisima i porezima u različitim zemljama, kako biste se mogli
+                        adekvatno pripremiti za međunarodno poslovanje. Naša misija je da vaša roba bude sigurno i
+                        brzo isporučena na odredište, uz minimalne troškove i brige za vas.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-prevoz-evropa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/12.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Šlepanje vozila</h3>
+                    <p class="textDescWhyUs">Naša firma pruža usluge šlepanja za sve vrste vozila u slučaju kvara,
+                        nezgode ili drugih nepredviđenih situacija na putu. Naš tim iskusnih vozača i mehaničara
+                        obezbeđuje brzu i efikasnu pomoć u slučaju neplaniranih situacija kako biste se mogli
+                        vratiti na put i nastaviti sa svojim putovanjem. Svojim klijentima nudimo pouzdanost,
+                        profesionalnost i brzu intervenciju, 24 sata dnevno, 7 dana u nedelji, tokom cele godine.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-prevoz-evropa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/11.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Selidbe i prevoz nameštaja</h3>
+                    <p class="textDescWhyUs">Pružamo usluge selidbe i transporta nameštaja za privatne klijente i
+                        kompanije. Naši iskusni radnici pažljivo rukuju sa vašim nameštajem i osiguravaju siguran i
+                        brz prevoz.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+`;
+
+document.getElementById("ourServicesTemplateId").innerHTML = ourServicesSerbian;
