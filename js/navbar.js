@@ -10,7 +10,7 @@ let navbarTemplateSerbian = `
         <p class="link photoLarge"><a class="listNavbarItem" href="tel:+49 170436 2889" id="mob2"><i class="fa fa-phone-alt me-2 photoFa"></i>Viber/WA: +49 170436 2889</a></p>
     </div>
     <ul class="navigation" id="pagesList">
-        <li class="parent paddingChange"><a href="index.html" class="link" id="homeTab">Početna</a></li>
+        <li class="parent paddingChange"><a href="prevoz-transport-vozila-evropa.html" class="link" id="homeTab">Početna</a></li>
         <li class="parent paddingChange"><a href="about.html" class="link" id="aboutTab">O nama</a></li>
         <li class="parent paddingChange"><a href="gallery.html" class="link" id="galleryTab">Galerija</a></li>
         <li class="parent paddingChange"><a href="contact.html" class="link" id="contactTab">Kontakt</a></li>
@@ -30,7 +30,7 @@ let navbarTemplateEnglish = `
         <p class="link photoLarge"><a class="listNavbarItem" href="tel:+49 170436 2889" id="mob2"><i class="fa fa-phone-alt me-2 photoFa"></i>Viber/WA: +49 170436 2889</a></p>
     </div>
     <ul class="navigation" id="pagesList">
-        <li class="parent paddingChange"><a href="index.html" class="link" id="homeTab">Home</a></li>
+        <li class="parent paddingChange"><a href="prevoz-transport-vozila-evropa.html" class="link" id="homeTab">Home</a></li>
         <li class="parent paddingChange"><a href="about.html" class="link" id="aboutTab">About Us</a></li>
         <li class="parent paddingChange"><a href="gallery.html" class="link" id="galleryTab">Gallery</a></li>
         <li class="parent paddingChange"><a href="contact.html" class="link" id="contactTab">Contact</a></li>
@@ -50,7 +50,7 @@ let navbarTemplateGerman = `
         <p class="link photoLarge"><a class="listNavbarItem" href="tel:+49 170436 2889" id="mob2"><i class="fa fa-phone-alt me-2 photoFa"></i>Viber/WA: +49 170436 2889</a></p>
     </div>
     <ul class="navigation" id="pagesList">
-        <li class="parent paddingChange"><a href="index.html" class="link" id="homeTab">Startseite</a></li>
+        <li class="parent paddingChange"><a href="prevoz-transport-vozila-evropa.html" class="link" id="homeTab">Startseite</a></li>
         <li class="parent paddingChange"><a href="about.html" class="link" id="aboutTab">Über uns</a></li>
         <li class="parent paddingChange"><a href="gallery.html" class="link" id="galleryTab">Galerie</a></li>
         <li class="parent paddingChange"><a href="contact.html" class="link" id="contactTab">Kontakt</a></li>
@@ -71,7 +71,7 @@ let navbarTemplateSmallWindowGerman = `
     </div>
     <ul class="navigation" id="pagesList">
         <ul class="navigation" id="pagesListChild">
-            <li class="parent paddingChange"><a href="index.html" class="link" id="homeTab">Startseite</a></li>
+            <li class="parent paddingChange"><a href="prevoz-transport-vozila-evropa.html" class="link" id="homeTab">Startseite</a></li>
             <li class="parent paddingChange"><a href="about.html" class="link" id="aboutTab">Über uns</a></li>
         </ul>
         <ul class="navigation" id="pagesListChild">
@@ -95,7 +95,7 @@ let navbarTemplateSmallWindowSerbian = `
     </div>
     <ul class="navigation" id="pagesList">
         <ul class="navigation" id="pagesListChild">
-            <li class="parent paddingChange"><a href="index.html" class="link" id="homeTab">Početna</a></li>
+            <li class="parent paddingChange"><a href="prevoz-transport-vozila-evropa.html" class="link" id="homeTab">Početna</a></li>
             <li class="parent paddingChange"><a href="about.html" class="link" id="aboutTab">O nama</a></li>
         </ul>
         <ul class="navigation" id="pagesListChild">
@@ -119,7 +119,7 @@ let navbarTemplateSmallWindowEnglish = `
     </div>
     <ul class="navigation" id="pagesList">
         <ul class="navigation" id="pagesListChild">
-            <li class="parent paddingChange"><a href="index.html" class="link" id="homeTab">Home</a></li>
+            <li class="parent paddingChange"><a href="prevoz-transport-vozila-evropa.html" class="link" id="homeTab">Home</a></li>
             <li class="parent paddingChange"><a href="about.html" class="link" id="aboutTab">About Us</a></li>
         </ul>
         <ul class="navigation" id="pagesListChild">

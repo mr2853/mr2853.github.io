@@ -5,7 +5,7 @@ let footerSerbian = `
         <div class="col-lg-3 col-md-6">
             <h3 class="text-white mb-4">Linkovi:</h3>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-secondary mb-2" href="index.html"><i
+                <a class="text-secondary mb-2" href="prevoz-transport-vozila-evropa.html"><i
                         class="bi bi-arrow-right text-primary me-2"></i>Početna</a>
                 <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>O
                     nama</a>
@@ -39,7 +39,7 @@ let footerEnglish = `
         <div class="col-lg-3 col-md-6">
             <h3 class="text-white mb-4">Links:</h3>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-secondary mb-2" href="index.html"><i
+                <a class="text-secondary mb-2" href="prevoz-transport-vozila-evropa.html"><i
                         class="bi bi-arrow-right text-primary me-2"></i>Home</a>
                 <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                 <a class="text-secondary mb-2" href="gallery.html"><i
@@ -72,7 +72,7 @@ let footerGerman = `
         <div class="col-lg-3 col-md-6">
             <h3 class="text-white mb-4">Links:</h3>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-secondary mb-2" href="index.html"><i
+                <a class="text-secondary mb-2" href="prevoz-transport-vozila-evropa.html"><i
                         class="bi bi-arrow-right text-primary me-2"></i>Startseite</a>
                 <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Über uns</a>
                 <a class="text-secondary mb-2" href="gallery.html"><i
