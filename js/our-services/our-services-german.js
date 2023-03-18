@@ -1,0 +1,99 @@
+let ourServicesGerman = `
+<!-- Services Start -->
+<div class="container-fluid pt-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 mb-0 textRootTitleService">Unsere Dienstleistungen</h1>
+        <hr class="w-25 mx-auto bg-primary">
+    </div>
+    <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-transport-europa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/12.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Fahrzeugtransport</h3>
+                    <p class="textDescWhyUs">Unser Unternehmen bietet einen sicheren und zuverlässigen Transport verschiedener Fahrzeugtypen, einschließlich Autos, Motorräder, Kleintransporter und Lieferwagen bis zu 3,5 Tonnen und vieles mehr. Unser Lastwagen ist mit der Möglichkeit ausgestattet, bis zu zwei Fahrzeuge gleichzeitig zu transportieren, so dass wir alle Ihre Anforderungen im Bereich des Fahrzeugtransports erfüllen können.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-transport-europa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageHeavyService">
+                        <img data-src="img/icons/8.gif" class="fitImageHeavyService lazy">
+                    </div>
+                    <h3 class="textTitleService">Frachttransport bis zu 5 Tonnen</h3>
+                    <p class="textDescWhyUs">Für den Transport großer und schwerer Gegenstände wie Baumaschinen, Industriemaschinen oder anderer schwerer Fracht ist unser Lastwagen ideal für den Job. Unsere Besatzung hat Erfahrung im Transport von schweren Gütern, so dass Sie sicher sein können, dass Ihre Waren sicher und ohne Probleme am Ziel ankommen werden.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-transport-europa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/9.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Internationale Transporte</h3>
+                    <p class="textDescWhyUs">Unser Unternehmen bietet internationale Transportdienstleistungen in ganz Europa an und beachtet dabei die Zollvorschriften und Gesetze der Länder, in die die Ware transportiert wird. Unsere Fahrer sind geschult, um in verschiedenen Ländern zu arbeiten, was bedeutet, dass Ihre Waren zuverlässig und schnell transportiert werden.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-transport-europa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/10.gif" class="fitImageService lazy" style="margin-bottom: 15px;">
+                    </div>
+                    <h3 class="textTitleService">Spezielle Transporte</h3>
+                    <p class="textDescWhyUs">Wenn Sie einen Transport von spezieller Art benötigen, wie zum Beispiel den Transport von Fahrzeugen mit Behinderungen oder anderen ungewöhnlichen Frachtgütern, kann Ihnen unser Unternehmen helfen. Unsere Fahrer sind für spezielle Transportdienstleistungen geschult, so dass wir sicherstellen können, dass Ihre Ware ohne Probleme am Zielort ankommt.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-transport-europa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/13.gif" class="fitImageService lazy" style="margin-bottom: 15px;">
+                    </div>
+                    <h3 class="textTitleService">Zollabfertigung</h3>
+                    <p class="textDescWhyUs">Unser Unternehmen bietet Ihnen einen kompletten Service für die Zollabfertigung Ihrer internationalen Sendungen. Unser Team von Experten für Zollvorschriften sorgt dafür, dass Ihre Waren ohne Probleme oder Verzögerungen durch den Zollprozess kommen. Darüber hinaus bieten wir Beratungsdienstleistungen zu Zollvorschriften und Steuern in verschiedenen Ländern, damit Sie sich angemessen auf internationales Geschäft vorbereiten können. Unsere Mission ist es, Ihre Waren sicher und schnell zu liefern, mit minimalen Kosten und Aufwand für Sie.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-transport-europa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/12.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Fahrzeugabschleppen</h3>
+                    <p class="textDescWhyUs">Unser Unternehmen bietet Abschleppdienste für alle Arten von Fahrzeugen im Falle von Pannen, Unfällen oder anderen unvorhergesehenen Situationen auf der Straße. Unser Team erfahrener Fahrer und Mechaniker sorgt für schnelle und effiziente Hilfe bei ungeplanten Situationen, damit Sie wieder auf die Straße zurückkehren und Ihre Reise fortsetzen können. Wir bieten unseren Kunden Zuverlässigkeit, Professionalität und schnelle Intervention, 24 Stunden am Tag, 7 Tage die Woche, das ganze Jahr über.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="kontakt-transport-europa.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/11.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Umzüge und Möbeltransporte</h3>
+                    <p class="textDescWhyUs">Wir bieten Umzugs- und Möbeltransportdienste für private Kunden und Unternehmen an. Unsere erfahrenen Mitarbeiter handhaben Ihre Möbel sorgfältig und gewährleisten einen sicheren und schnellen Transport.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+`;
+
+document.getElementById("ourServicesTemplateId").innerHTML = ourServicesGerman;

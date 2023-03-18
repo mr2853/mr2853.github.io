@@ -1,0 +1,100 @@
+let ourServicesEnglish = `
+<!-- Services Start -->
+<div class="container-fluid pt-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 mb-0 textRootTitleService">Our services</h1>
+        <hr class="w-25 mx-auto bg-primary">
+    </div>
+    <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/12.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Vehicle transport</h3>
+                    <p class="textDescWhyUs">Our company offers a safe and reliable transport of various types of vehicles, including cars, motorcycles, small trucks and vans up to 3.5 tons and much more. Our truck is equipped to transport up to two vehicles at the same time, so we can meet all your vehicle transport needs.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageHeavyService">
+                        <img data-src="img/icons/8.gif" class="fitImageHeavyService lazy">
+                    </div>
+                    <h3 class="textTitleService">Freight transport up to 5 tons</h3>
+                    <p class="textDescWhyUs">For the transport of large and heavy items such as construction equipment, industrial machinery, or other heavy freight, our truck is ideal for the job. Our crew has experience in transporting heavy cargo, so you can be sure that your goods will arrive at their destination safely and without any problems.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/9.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">International transport</h3>
+                    <p class="textDescWhyUs">Our company provides international transport services throughout Europe, while respecting customs regulations and laws of the countries to which the goods are transported. Our drivers are trained to work in different countries, which means that your goods are transported reliably and quickly.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/10.gif" class="fitImageService lazy" style="margin-bottom: 15px;">
+                    </div>
+                    <h3 class="textTitleService">Special transports</h3>
+                    <p class="textDescWhyUs">Our company offers you a complete customs brokerage service for your international shipments. Our team of customs regulation experts ensures that your goods go through the customs process without any problems or delays. In addition, we offer advisory services regarding customs regulations and taxes in different countries, so that you can adequately prepare for international business. Our mission is to deliver your goods safely and quickly to their destination, with minimal costs and worries for you.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/13.gif" class="fitImageService lazy" style="margin-bottom: 15px;">
+                    </div>
+                    <h3 class="textTitleService">Customs brokerage</h3>
+                    <p class="textDescWhyUs">Our company offers you a complete customs brokerage service for your international shipments. Our team of customs regulation experts ensures that your goods go through the customs process without any problems or delays. In addition, we offer advisory services regarding customs regulations and taxes in different countries, so that you can adequately prepare for international business. Our mission is to deliver your goods safely and quickly to their destination, with minimal costs and worries for you.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/12.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Vehicle towing</h3>
+                    <p class="textDescWhyUs">Our company provides towing services for all types of vehicles in case of breakdowns, accidents, or other unforeseen situations on the road. Our team of experienced drivers and mechanics ensures fast and efficient assistance in case of unplanned situations, so you can get back on the road and continue your journey. We offer our clients reliability, professionalism, and fast intervention, 24 hours a day, 7 days a week, all year round.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <a href="contact-transport-europe.html" class="reset-this-root">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4 fitDivImageService">
+                        <img data-src="img/icons/11.gif" class="fitImageService lazy">
+                    </div>
+                    <h3 class="textTitleService">Moving and Furniture Transport</h3>
+                    <p class="textDescWhyUs">We provide moving and furniture transport services for private clients and businesses. Our experienced staff handle your furniture with care and ensure a safe and fast transport.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+`;
+
+
+document.getElementById("ourServicesTemplateId").innerHTML = ourServicesEnglish;
