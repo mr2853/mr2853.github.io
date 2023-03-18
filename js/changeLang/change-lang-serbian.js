@@ -7,9 +7,11 @@ let popupChangeLangSerbian = `
 
 document.getElementById('popupChangeLang').innerHTML = popupChangeLangSerbian;
 
+let holdChangeLang = document.getElementById("changeLangScript").getAttribute("holdChangeLang");
+
 setTimeout(function(){
     document.getElementById('popupChangeLang').className += "fade-in";
     setTimeout(function(){
         document.getElementById('popupChangeLang').className += "fade-in";
-    }, 10000);
+    }, parseInt(holdChangeLang));
 }, 1500);
