@@ -13,7 +13,7 @@ let aboutHtmlTextSerbian = `
         </div>
 
         <div class="col-lg-6 smallMarginTopAboutUsTitle aboutUsImageDiv" style="width: fit-content;">
-            <img class="aboutUsImage lazy" data-src="img/1.jpg" loading="lazy">
+            <img class="aboutUsImage lazy" data-src="img/1.jpg" loading="lazy" alt="Kamion sa prikolicom u floti Transport Evropa">
         </div>
     </div>
 </div>
@@ -31,7 +31,7 @@ let aboutHtmlTextEnglish = `
         </div>
 
         <div class="col-lg-6 smallMarginTopAboutUsTitle aboutUsImageDiv" style="width: fit-content;">
-            <img class="aboutUsImage lazy" data-src="img/1.jpg" loading="lazy">
+            <img class="aboutUsImage lazy" data-src="img/1.jpg" loading="lazy" alt="Picture of a truck with trailer in Transport Europe's fleet">
         </div>
     </div>
 </div>
@@ -49,7 +49,7 @@ let aboutHtmlTextGerman = `
         </div>
 
         <div class="col-lg-6 smallMarginTopAboutUsTitle aboutUsImageDiv" style="width: fit-content;">
-            <img class="aboutUsImage lazy" data-src="img/1.jpg" loading="lazy">
+            <img class="aboutUsImage lazy" data-src="img/1.jpg" loading="lazy" alt="Bild eines Lastwagens mit Anhänger in der Flotte von Transport Europa">
         </div>
     </div>
 </div>
