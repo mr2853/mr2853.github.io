@@ -34,3 +34,36 @@
         font-size: 1.3rem;
     }
 }
+
+.contactDivList {
+    width: 100%;
+    max-width: none;
+}
+
+#submitEmailButton {
+    font-size: 3rem;
+    border: 3px solid rgba(14, 14, 14, 0.685);
+    border-radius: 15px;
+}
+
+.contactField {
+    font-size: 2.5rem;
+    border: 2px solid rgba(14, 14, 14, 0.61);
+    border-radius: 15px;
+}
+
+#formTitle {
+    font-size: 3.5rem;
+}
+
+.contactInfoTitle {
+    font-size: 3.5rem;
+}
+
+.contactInfoDesc {
+    font-size: 2.5rem;
+}
+
+#footerTemplateId {
+    font-size: 1.5rem;
+}
