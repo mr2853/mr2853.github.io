@@ -1,0 +1,320 @@
+/* ===== Dual Energy - stilovi ===== */
+
+:root {
+  --de-primary: #0d6efd;
+  --de-dark: #0a2540;
+  --de-darker: #061a2e;
+  --de-light: #eef5ff;
+  --de-accent: #ffc107;
+  --bs-primary: var(--de-primary);
+}
+
+html {
+  scroll-padding-top: 76px;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1f2d3d;
+}
+
+/* ----- Navigacija ----- */
+.navbar {
+  background: rgba(6, 26, 46, 0.85);
+  backdrop-filter: blur(8px);
+  transition: background 0.3s, padding 0.3s;
+  padding-block: 1rem;
+}
+
+.navbar.scrolled {
+  background: var(--de-darker);
+  padding-block: 0.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.brand-icon {
+  color: #5cc8ff;
+  font-size: 1.6rem;
+}
+
+.navbar .nav-link.active {
+  color: var(--de-accent) !important;
+}
+
+/* ----- Hero ----- */
+.hero {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(92, 200, 255, 0.25), transparent 50%),
+    linear-gradient(135deg, var(--de-darker) 0%, var(--de-dark) 50%, #0b4f8a 100%);
+}
+
+.hero-badge {
+  background: rgba(255, 193, 7, 0.15);
+  color: var(--de-accent);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.hero-stats small {
+  opacity: 0.75;
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.btn-viber {
+  background: #7360f2;
+  color: #fff;
+}
+
+.btn-viber:hover {
+  background: #5e4bd8;
+  color: #fff;
+}
+
+/* ----- Sekcije ----- */
+.section {
+  padding: 90px 0;
+}
+
+.section-label {
+  display: inline-block;
+  color: var(--de-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-lead {
+  max-width: 600px;
+}
+
+.bg-light-blue {
+  background: var(--de-light);
+}
+
+.bg-dark-blue {
+  background: linear-gradient(135deg, var(--de-darker), var(--de-dark));
+}
+
+/* ----- Usluge ----- */
+.service-card {
+  border: 0;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(10, 37, 64, 0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(10, 37, 64, 0.12);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  color: var(--de-primary);
+  background: var(--de-light);
+  margin-bottom: 1.25rem;
+}
+
+/* ----- Zašto mi ----- */
+.feature {
+  display: flex;
+  gap: 1rem;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  height: 100%;
+}
+
+.feature > i {
+  font-size: 1.6rem;
+  color: var(--de-primary);
+  flex-shrink: 0;
+}
+
+/* ----- Koraci ----- */
+.step-number {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--de-primary), #5cc8ff);
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.3);
+}
+
+/* ----- Cenovnik ----- */
+.price-card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(10, 37, 64, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.price-card.featured {
+  border: 2px solid var(--de-primary);
+  box-shadow: 0 12px 30px rgba(13, 110, 253, 0.18);
+}
+
+.price-card .price {
+  color: var(--de-primary);
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.price-card .price span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-card li {
+  padding: 0.3rem 0;
+}
+
+.price-table td {
+  padding-block: 0.55rem;
+}
+
+.ribbon {
+  position: absolute;
+  top: 18px;
+  right: -32px;
+  transform: rotate(45deg);
+  background: var(--de-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 2.5rem;
+}
+
+/* ----- FAQ ----- */
+.accordion-item {
+  border: 0;
+  border-radius: 0.75rem !important;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(10, 37, 64, 0.06);
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--de-light);
+  color: var(--de-dark);
+}
+
+/* ----- Kontakt ----- */
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-list i {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--de-accent);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.contact-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-form-card {
+  background: #fff;
+  color: #1f2d3d;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* ----- Footer ----- */
+.footer {
+  background: var(--de-darker);
+  color: #fff;
+}
+
+.footer .social a {
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 1;
+}
+
+/* ----- Plutajuće dugme za poziv ----- */
+.call-fab {
+  position: fixed;
+  right: 20px;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #198754;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1030;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.6); }
+  70%  { box-shadow: 0 0 0 16px rgba(25, 135, 84, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0); }
+}
+
+@media (max-width: 575.98px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .contact-form-card {
+    padding: 1.25rem;
+  }
+}
