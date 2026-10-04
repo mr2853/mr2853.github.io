@@ -44,7 +44,22 @@ Boje sajta su iz logoa: zelena `#8bc53f` (dugmad, sa crnim tekstom), tamnozelena
 ## Adresa sajta
 
 Sajt je na `https://mr2853.github.io/`. Ako se pređe na sopstveni domen, adresu promeniti u
-`index.html`: `canonical`, `og:url`, `og:image` i u podacima za Google (`url`, `logo`, `image`).
+`index.html`: `canonical`, `og:url`, `og:image` i u podacima za Google (`url`, `logo`, `image`),
+kao i u `sitemap.xml` i `robots.txt`.
+
+## Google pretraga (SEO)
+
+Meta "keywords" se ne koristi - Google ga ignoriše. Za pretragu je bitan tekst na stranici
+(naslov, opis, česta pitanja sa "Novi Sad"), podaci za Google (JSON-LD u `<head>`) i:
+
+1. **Google Business Profile** (najvažnije za "klima servis Novi Sad" i prikaz na mapi):
+   klijent otvara profil firme na https://business.google.com sa adresom Alaska 8, telefonom,
+   radnim vremenom i linkom ka sajtu; Google šalje kod za potvrdu adrese. Kasnije skupljati
+   recenzije zadovoljnih mušterija.
+2. **Google Search Console** (https://search.google.com/search-console): dodati sajt,
+   potvrditi vlasništvo (HTML oznaka u `<head>` ili fajl u korenu sajta) i prijaviti
+   `https://mr2853.github.io/sitemap.xml`.
+3. Pri većim izmenama sadržaja ažurirati `lastmod` datum u `sitemap.xml`.
 
 ## Pre objavljivanja
 
