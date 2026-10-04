@@ -2,28 +2,43 @@
 
 :root {
   --de-primary: #0d6efd;
+  --de-primary-dark: #0a58ca;
   --de-dark: #0a2540;
   --de-darker: #061a2e;
   --de-light: #eef5ff;
   --de-accent: #ffc107;
-  --bs-primary: var(--de-primary);
+  --mobile-cta-height: 64px;
 }
 
 html {
-  scroll-padding-top: 76px;
+  scroll-padding-top: 72px;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #1f2d3d;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ikonice (SVG sprite na vrhu stranice) */
+.bi {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 /* ----- Navigacija ----- */
 .navbar {
-  background: rgba(6, 26, 46, 0.85);
-  backdrop-filter: blur(8px);
-  transition: background 0.3s, padding 0.3s;
-  padding-block: 1rem;
+  background: rgba(6, 26, 46, 0.92);
+  transition: background 0.3s, padding 0.3s, box-shadow 0.3s;
+  padding-block: 0.75rem;
 }
 
 .navbar.scrolled {
@@ -33,36 +48,76 @@ body {
 }
 
 .navbar-brand {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
 .brand-icon {
   color: #5cc8ff;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
-.navbar .nav-link.active {
-  color: var(--de-accent) !important;
+.nav-call {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.navbar-toggler {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background: var(--de-darker);
+  }
+
+  .navbar-collapse .nav-link {
+    padding-block: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
 }
 
 /* ----- Hero ----- */
 .hero {
-  min-height: 100vh;
-  padding: 120px 0 80px;
+  padding: 96px 0 48px;
   background:
     radial-gradient(circle at 80% 20%, rgba(92, 200, 255, 0.25), transparent 50%),
     linear-gradient(135deg, var(--de-darker) 0%, var(--de-dark) 50%, #0b4f8a 100%);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 6.5vw, 3.5rem);
+  line-height: 1.15;
+}
+
+.hero-lead {
+  font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+  opacity: 0.92;
 }
 
 .hero-badge {
   background: rgba(255, 193, 7, 0.15);
   color: var(--de-accent);
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.9rem;
+  white-space: normal;
+  text-align: left;
+  line-height: 1.4;
 }
 
 .hero-stats small {
-  opacity: 0.75;
+  opacity: 0.8;
+}
+
+@media (max-width: 399.98px) {
+  .hero-stats small {
+    font-size: 0.75rem;
+  }
 }
 
 .hero-card {
@@ -72,23 +127,42 @@ body {
 }
 
 .btn-viber {
-  background: #7360f2;
+  background: #665cac;
   color: #fff;
 }
 
-.btn-viber:hover {
-  background: #5e4bd8;
+.btn-whatsapp {
+  background: #075e54;
   color: #fff;
+}
+
+.btn-viber:hover,
+.btn-whatsapp:hover {
+  filter: brightness(1.12);
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    min-height: 100vh;
+    padding: 120px 0 80px;
+  }
 }
 
 /* ----- Sekcije ----- */
 .section {
-  padding: 90px 0;
+  padding: 56px 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 90px 0;
+  }
 }
 
 .section-label {
   display: inline-block;
-  color: var(--de-primary);
+  color: var(--de-primary-dark);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -98,6 +172,7 @@ body {
 
 .section-title {
   font-weight: 700;
+  font-size: clamp(1.6rem, 4.5vw, 2.25rem);
   margin-bottom: 1rem;
 }
 
@@ -117,26 +192,28 @@ body {
 .service-card {
   border: 0;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.75rem;
   box-shadow: 0 4px 20px rgba(10, 37, 64, 0.06);
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(10, 37, 64, 0.12);
+@media (hover: hover) {
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(10, 37, 64, 0.12);
+  }
 }
 
 .service-icon {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   border-radius: 14px;
   display: grid;
   place-items: center;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: var(--de-primary);
   background: var(--de-light);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 /* ----- Zašto mi ----- */
@@ -149,16 +226,15 @@ body {
   height: 100%;
 }
 
-.feature > i {
+.feature > .bi {
   font-size: 1.6rem;
   color: var(--de-primary);
-  flex-shrink: 0;
 }
 
 /* ----- Koraci ----- */
 .step-number {
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto 1rem;
   border-radius: 50%;
   display: grid;
@@ -166,7 +242,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
-  background: linear-gradient(135deg, var(--de-primary), #5cc8ff);
+  background: linear-gradient(135deg, var(--de-primary), #3fa9f5);
   box-shadow: 0 6px 18px rgba(13, 110, 253, 0.3);
 }
 
@@ -185,8 +261,7 @@ body {
 }
 
 .price-card .price {
-  color: var(--de-primary);
-  font-size: 1rem;
+  color: var(--de-primary-dark);
   margin-bottom: 1.25rem;
 }
 
@@ -200,7 +275,7 @@ body {
 }
 
 .price-table td {
-  padding-block: 0.55rem;
+  padding-block: 0.6rem;
 }
 
 .ribbon {
@@ -225,6 +300,7 @@ body {
 
 .accordion-button {
   font-weight: 600;
+  padding-block: 1.1rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -240,7 +316,7 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.contact-list i {
+.contact-list .icon-box {
   width: 48px;
   height: 48px;
   border-radius: 12px;
@@ -256,65 +332,120 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .contact-form-card {
   background: #fff;
   color: #1f2d3d;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .contact-form-card {
+    padding: 2rem;
+  }
 }
 
 /* ----- Footer ----- */
 .footer {
   background: var(--de-darker);
   color: #fff;
+  padding-block: 1.5rem;
+}
+
+.footer a {
+  color: #fff;
 }
 
 .footer .social a {
-  color: #fff;
-  font-size: 1.2rem;
-  opacity: 0.75;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  opacity: 0.8;
 }
 
 .footer .social a:hover {
   opacity: 1;
 }
 
-/* ----- Plutajuće dugme za poziv ----- */
-.call-fab {
+/* ----- Donja traka za mobilni (Pozovite / Viber / WhatsApp) ----- */
+.mobile-cta {
   position: fixed;
-  right: 20px;
-  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: #198754;
-  color: #fff;
-  font-size: 1.5rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1030;
-  animation: pulse 2s infinite;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
+  background: #fff;
+  box-shadow: 0 -4px 16px rgba(10, 37, 64, 0.15);
 }
 
-@keyframes pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.6); }
-  70%  { box-shadow: 0 0 0 16px rgba(25, 135, 84, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0); }
+.mobile-cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 48px;
+  border-radius: 0.6rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-@media (max-width: 575.98px) {
-  .section {
-    padding: 64px 0;
+.mobile-cta .bi {
+  font-size: 1.15rem;
+}
+
+.mobile-cta .cta-call {
+  background: #157347;
+}
+
+.mobile-cta .cta-viber {
+  background: #665cac;
+}
+
+.mobile-cta .cta-whatsapp {
+  background: #075e54;
+}
+
+@media (max-width: 991.98px) {
+  /* da donja traka ne prekrije kraj stranice */
+  body {
+    padding-bottom: calc(var(--mobile-cta-height) + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+body.legal-page {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (max-width: 389.98px) {
+  .mobile-cta {
+    gap: 0.4rem;
+    padding-inline: 0.5rem;
   }
 
-  .hero {
-    padding-top: 100px;
+  .mobile-cta a {
+    font-size: 0.875rem;
+    gap: 0.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 
-  .contact-form-card {
-    padding: 1.25rem;
+  .service-card,
+  .navbar {
+    transition: none;
   }
 }
