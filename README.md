@@ -107,7 +107,7 @@ Tekstovi se menjaju u skripti odmah ispod naslova u `index.html`.
 
 ## Animacija hlađenje / grejanje
 
-Hero deo automatski prikazuje animaciju po datumu:
+Hero deo automatski prikazuje animaciju po datumu:  
 
 - **septembar - mart:** grejanje (topla pozadina, klima na 24°, topao vazduh)
 - **april - avgust:** hlađenje (plava pozadina, klima na 18°, pahulje)
