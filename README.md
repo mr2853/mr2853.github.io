@@ -8,13 +8,28 @@ telefone i Google Ads. Lighthouse (mobilni): 100 / 100 / 100 / 100.
 ```
 index.html                 - glavna stranica (landing za oglase)
 politika-privatnosti.html  - politika privatnosti (potrebna zbog forme i Google Ads-a)
-css/style.css              - stilovi
+css/style.css              - stilovi (posle izmene pokrenuti alati/css.py!)
 js/main.js                 - meni, forma, praćenje konverzija
-vendor/bootstrap/          - Bootstrap 5.3.3 (lokalno, zbog brzine)
+vendor/bootstrap/          - Bootstrap 5.3.3 (CSS se ne učitava direktno, videti dole; JS da)
 img/                       - logo (SVG), favicon, ikonica za telefon, slika za deljenje linka
+alati/css.py               - ugrađuje CSS u stranice (videti dole)
 alati/ikonice.py           - ugrađuje ikonice u stranice (videti dole)
 images/                    - izvorni fajlovi logoa (.ai, .eps, .pdf) - NE objavljuju se (.gitignore)
 ```
+
+## CSS (važno)
+
+Zbog brzine na mobilnom, CSS nije u posebnim fajlovima nego je ugrađen u same stranice
+(između `<!-- css:start -->` i `<!-- css:end -->`), a iz Bootstrap-a je zadržano samo ono što
+sajt koristi. Zato se stilovi menjaju ovako:
+
+1. izmeniti `css/style.css` (ne menjati CSS direktno u HTML-u)
+2. pokrenuti `python alati/css.py` (potreban Node.js, koristi PurgeCSS)
+
+Isto važi kada se u HTML doda Bootstrap klasa koja do sada nije korišćena (npr. `d-xl-none`).
+Klase koje dodaju skripte (meni, harmonika, poruke forme) navedene su u
+`alati/purgecss.config.cjs` - ako se doda nova Bootstrap komponenta sa JavaScript-om, njene
+klase dodati tamo.
 
 ## Logo i boje
 
@@ -35,13 +50,13 @@ Sajt je na `https://mr2853.github.io/`. Ako se pređe na sopstveni domen, adresu
 
 U `index.html` potražiti `TODO` i dopuniti:
 
-- cene u cenovniku (`X.XXX`)
 - spisak brendova sa kojima se radi (sekcija "Zašto mi")
 - `VAS_FORM_ID` u kontakt formi - napraviti besplatan nalog na https://formspree.io
   (sa `dualenergyinstalacije@gmail.com`), kreirati formu i upisati njen ID
 - Google Ads ID i labele konverzija (videti dole)
 
-Proveriti sa klijentom i tvrdnje na sajtu: izlazak u roku od 24h, besplatna procena,
+Cene u cenovniku su okvirne, prema cenama servisa u Novom Sadu (2026) - potvrditi ih sa
+klijentom. Proveriti sa klijentom i tvrdnje na sajtu: izlazak u roku od 24h, besplatna procena,
 radno vreme (Pon - Sub 08 - 20h), garancija i fiskalni račun.
 
 ## Google Ads

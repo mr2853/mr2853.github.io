@@ -1,10 +1,11 @@
 // ===== Dual Energy - skripte =====
 
-// Navigacija dobija tamniju pozadinu kada se skroluje
+// Navigacija dobija senku kada se skroluje
 const nav = document.getElementById('mainNav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 50);
 window.addEventListener('scroll', onScroll, { passive: true });
-onScroll();
+// početno stanje tek posle prvog iscrtavanja, da čitanje skrola ne usporava učitavanje
+requestAnimationFrame(() => setTimeout(onScroll));
 
 // Zatvaranje mobilnog menija posle klika na link
 const navMenu = document.getElementById('navMenu');
