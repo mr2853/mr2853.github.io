@@ -16,6 +16,25 @@ navMenu.querySelectorAll('.nav-link').forEach((link) => {
   });
 });
 
+// Animacija klime se pauzira kada hero nije na ekranu (štedi bateriju na telefonu)
+const hero = document.getElementById('pocetna');
+new IntersectionObserver(([entry]) => {
+  hero.classList.toggle('fx-paused', !entry.isIntersecting);
+}).observe(hero);
+
+// Prekidač animacije hlađenje / grejanje (početna sezona se bira po datumu u <head>)
+const seasonButtons = document.querySelectorAll('.season-btn');
+const setSeason = (season) => {
+  document.documentElement.dataset.season = season;
+  seasonButtons.forEach((btn) => {
+    btn.setAttribute('aria-pressed', btn.dataset.seasonValue === season);
+  });
+};
+seasonButtons.forEach((btn) => {
+  btn.addEventListener('click', () => setSeason(btn.dataset.seasonValue));
+});
+setSeason(document.documentElement.dataset.season || 'cool');
+
 // Tekuća godina u footer-u
 document.getElementById('year').textContent = new Date().getFullYear();
 

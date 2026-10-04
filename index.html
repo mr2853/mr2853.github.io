@@ -19,6 +19,19 @@
   <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Sezona animacije: grejanje od septembra do marta, hlađenje od aprila do avgusta.
+       Za prikaz klijentu: dodati ?sezona=grejanje ili ?sezona=hladjenje na kraj adrese. -->
+  <script>
+    (function () {
+      var mesec = new Date().getMonth() + 1;
+      var sezona = mesec >= 9 || mesec <= 3 ? 'heat' : 'cool';
+      var izbor = new URLSearchParams(location.search).get('sezona');
+      if (izbor === 'grejanje') sezona = 'heat';
+      if (izbor === 'hladjenje') sezona = 'cool';
+      document.documentElement.dataset.season = sezona;
+    })();
+  </script>
+
   <!-- Google Ads - TODO: upisati ID naloga (AW-...) i labele konverzija iz Google Ads-a.
        Dok je ostavljeno XXXX, Google tag se ne učitava. -->
   <script>
@@ -86,6 +99,7 @@
     <symbol id="i-shield-check" viewBox="0 0 16 16"><path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/><path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/></symbol>
     <symbol id="i-snow2" viewBox="0 0 16 16"><path d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.086l-.646.647a.5.5 0 0 1-.707-.708L7.5 10.293V8.866l-1.236.713-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-.94.542-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495.94-.542-.882-.237a.5.5 0 1 1 .258-.966l1.85.495L7 8l-1.236-.713-1.849.495a.5.5 0 1 1-.258-.966l.883-.237-.94-.542-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 0 1 .966-.258l.495 1.849.94.542-.236-.883a.5.5 0 0 1 .966-.258l.495 1.849 1.236.713V5.707L6.147 4.354a.5.5 0 1 1 .707-.708l.646.647V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.086l.647-.647a.5.5 0 1 1 .707.708L8.5 5.707v1.427l1.236-.713.495-1.85a.5.5 0 1 1 .966.26l-.236.882.94-.542.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-.94.542.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l1.236.713 1.849-.495a.5.5 0 0 1 .259.966l-.883.237.94.542 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-.94-.542.236.883a.5.5 0 0 1-.966.258L9.736 9.58 8.5 8.866v1.427l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647v1.086l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5"/></symbol>
     <symbol id="i-stars" viewBox="0 0 16 16"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/></symbol>
+    <symbol id="i-sun-fill" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></symbol>
     <symbol id="i-telephone-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></symbol>
     <symbol id="i-thermometer-snow" viewBox="0 0 16 16"><path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V9.5a.5.5 0 0 1 1 0v1.585A1.5 1.5 0 0 1 5 12.5"/><path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1m5 1a.5.5 0 0 1 .5.5v1.293l.646-.647a.5.5 0 0 1 .708.708L9 5.207v1.927l1.669-.963.495-1.85a.5.5 0 1 1 .966.26l-.237.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.884.237a.5.5 0 1 1-.26.966l-1.848-.495L9.5 8l1.669.963 1.849-.495a.5.5 0 1 1 .258.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.237.883a.5.5 0 1 1-.966.258L10.67 9.83 9 8.866v1.927l1.354 1.353a.5.5 0 0 1-.708.708L9 12.207V13.5a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5"/></symbol>
     <symbol id="i-tools" viewBox="0 0 16 16"><path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/></symbol>
@@ -130,8 +144,176 @@
   <main>
     <!-- ===== HERO ===== -->
     <header id="pocetna" class="hero d-flex align-items-center">
+      <!-- Animacija hladnog vazduha (samo dekoracija, ne blokira sadržaj) -->
+      <div class="hero-fx" aria-hidden="true">
+        <div class="fx-cool">
+          <div class="hero-frost"></div>
+          <!-- jak nalet vetra pri ulasku (jednom) -->
+          <span class="gust blast" style="--y: 5%; --w: 54%; --d: 1.34s; --delay: 0.49s"></span>
+          <span class="gust blast" style="--y: 16%; --w: 53%; --d: 1.32s; --delay: 0.50s"></span>
+          <span class="gust blast" style="--y: 23%; --w: 51%; --d: 1.15s; --delay: 0.81s"></span>
+          <span class="gust blast" style="--y: 30%; --w: 67%; --d: 1.35s; --delay: 1.15s"></span>
+          <span class="gust blast" style="--y: 38%; --w: 57%; --d: 1.48s; --delay: 0.95s"></span>
+          <span class="gust blast" style="--y: 47%; --w: 68%; --d: 1.34s; --delay: 1.28s"></span>
+          <span class="gust blast" style="--y: 55%; --w: 77%; --d: 1.18s; --delay: 0.81s"></span>
+          <span class="gust blast" style="--y: 66%; --w: 68%; --d: 1.29s; --delay: 1.14s"></span>
+          <span class="gust blast" style="--y: 73%; --w: 68%; --d: 1.44s; --delay: 0.61s"></span>
+          <span class="gust blast" style="--y: 81%; --w: 72%; --d: 1.14s; --delay: 0.50s"></span>
+          <span class="gust blast" style="--y: 90%; --w: 71%; --d: 1.42s; --delay: 1.11s"></span>
+          <!-- pahulje koje nosi nalet vetra (jednom) -->
+          <svg class="bi flake burst" style="--y: 4%; --size: 17px; --d: 1.69s; --delay: 0.72s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 10%; --size: 13px; --d: 1.47s; --delay: 0.77s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 18%; --size: 15px; --d: 1.98s; --delay: 0.76s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 27%; --size: 11px; --d: 1.81s; --delay: 0.65s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 31%; --size: 17px; --d: 1.74s; --delay: 1.37s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 37%; --size: 18px; --d: 1.86s; --delay: 1.29s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 45%; --size: 15px; --d: 1.88s; --delay: 1.02s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 53%; --size: 11px; --d: 2.16s; --delay: 0.93s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 61%; --size: 10px; --d: 1.98s; --delay: 0.78s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 67%; --size: 20px; --d: 2.06s; --delay: 0.76s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 74%; --size: 20px; --d: 1.68s; --delay: 1.35s"><use href="#i-snow2"/></svg>
+          <svg class="bi flake burst" style="--y: 80%; --size: 19px; --d: 1.49s; --delay: 0.55s"><use href="#i-snow2"/></svg>
+          <!-- blagi naleti vetra -->
+          <span class="gust" style="--y: 14%; --d: 5.9s; --delay: 2.6s"></span>
+          <span class="gust" style="--y: 23%; --d: 8.1s; --delay: 2.1s"></span>
+          <span class="gust" style="--y: 36%; --d: 7.1s; --delay: 4.6s"></span>
+          <span class="gust" style="--y: 50%; --d: 8.1s; --delay: 2.7s"></span>
+          <span class="gust" style="--y: 59%; --d: 6.6s; --delay: 4.6s"></span>
+          <span class="gust" style="--y: 75%; --d: 6.0s; --delay: 2.4s"></span>
+          <span class="gust" style="--y: 82%; --d: 6.2s; --delay: 3.4s"></span>
+          <!-- pahulje koje padaju -->
+          <svg class="bi flake" style="--x: 2%; --size: 13px; --d: 8.7s; --delay: 1.4s; --dx: -98px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 5%; --size: 18px; --d: 8.9s; --delay: 1.3s; --dx: -95px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 11%; --size: 19px; --d: 11.1s; --delay: 0.9s; --dx: -117px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 14%; --size: 15px; --d: 9.4s; --delay: 2.7s; --dx: -91px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 18%; --size: 9px; --d: 8.1s; --delay: 5.9s; --dx: -86px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 20%; --size: 14px; --d: 10.6s; --delay: 1.2s; --dx: -102px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 24%; --size: 10px; --d: 12.7s; --delay: 3.9s; --dx: -39px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 30%; --size: 18px; --d: 9.3s; --delay: 4.0s; --dx: -74px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 33%; --size: 16px; --d: 7.7s; --delay: 5.2s; --dx: -89px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 37%; --size: 13px; --d: 7.5s; --delay: 1.2s; --dx: -73px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 41%; --size: 16px; --d: 12.0s; --delay: 1.5s; --dx: -32px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 43%; --size: 17px; --d: 9.2s; --delay: 4.3s; --dx: -33px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 49%; --size: 13px; --d: 12.9s; --delay: 5.3s; --dx: -119px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 53%; --size: 17px; --d: 9.2s; --delay: 1.5s; --dx: -58px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 56%; --size: 21px; --d: 10.0s; --delay: 4.0s; --dx: -108px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 61%; --size: 21px; --d: 12.1s; --delay: 5.0s; --dx: -81px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 64%; --size: 12px; --d: 8.2s; --delay: 3.3s; --dx: -33px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 69%; --size: 21px; --d: 8.7s; --delay: 2.0s; --dx: -118px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 71%; --size: 14px; --d: 9.7s; --delay: 5.7s; --dx: -74px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 76%; --size: 14px; --d: 7.5s; --delay: 1.2s; --dx: -90px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 78%; --size: 12px; --d: 9.9s; --delay: 5.9s; --dx: -108px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 84%; --size: 16px; --d: 12.5s; --delay: 2.5s; --dx: -112px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 85%; --size: 19px; --d: 7.7s; --delay: 2.7s; --dx: -55px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 90%; --size: 11px; --d: 9.6s; --delay: 4.0s; --dx: -41px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 95%; --size: 20px; --d: 9.4s; --delay: 2.8s; --dx: -40px"><use href="#i-snow2"/></svg>
+          <svg class="bi flake" style="--x: 99%; --size: 11px; --d: 13.0s; --delay: 0.7s; --dx: -105px"><use href="#i-snow2"/></svg>
+        </div>
+        <div class="fx-heat">
+          <div class="hero-heat-glow"></div>
+          <!-- nalet toplog vazduha pri ulasku (jednom) -->
+          <span class="gust blast" style="--y: 6%; --w: 67%; --d: 1.71s; --delay: 1.11s"></span>
+          <span class="gust blast" style="--y: 14%; --w: 77%; --d: 1.55s; --delay: 0.61s"></span>
+          <span class="gust blast" style="--y: 23%; --w: 70%; --d: 1.57s; --delay: 0.61s"></span>
+          <span class="gust blast" style="--y: 31%; --w: 54%; --d: 1.25s; --delay: 1.14s"></span>
+          <span class="gust blast" style="--y: 41%; --w: 51%; --d: 1.56s; --delay: 0.79s"></span>
+          <span class="gust blast" style="--y: 48%; --w: 73%; --d: 1.57s; --delay: 0.58s"></span>
+          <span class="gust blast" style="--y: 55%; --w: 66%; --d: 1.24s; --delay: 0.48s"></span>
+          <span class="gust blast" style="--y: 67%; --w: 69%; --d: 1.22s; --delay: 0.84s"></span>
+          <span class="gust blast" style="--y: 74%; --w: 76%; --d: 1.32s; --delay: 0.65s"></span>
+          <span class="gust blast" style="--y: 82%; --w: 50%; --d: 1.60s; --delay: 0.84s"></span>
+          <span class="gust blast" style="--y: 90%; --w: 67%; --d: 1.80s; --delay: 1.16s"></span>
+          <!-- užarene čestice koje nosi nalet (jednom) -->
+          <span class="ember burst" style="--y: 5%; --size: 8px; --d: 2.11s; --delay: 0.96s"></span>
+          <span class="ember burst" style="--y: 9%; --size: 10px; --d: 2.11s; --delay: 0.86s"></span>
+          <span class="ember burst" style="--y: 19%; --size: 9px; --d: 1.55s; --delay: 0.52s"></span>
+          <span class="ember burst" style="--y: 26%; --size: 7px; --d: 1.67s; --delay: 1.32s"></span>
+          <span class="ember burst" style="--y: 32%; --size: 11px; --d: 1.82s; --delay: 0.57s"></span>
+          <span class="ember burst" style="--y: 40%; --size: 12px; --d: 2.04s; --delay: 0.80s"></span>
+          <span class="ember burst" style="--y: 45%; --size: 6px; --d: 2.27s; --delay: 1.18s"></span>
+          <span class="ember burst" style="--y: 51%; --size: 7px; --d: 2.07s; --delay: 0.51s"></span>
+          <span class="ember burst" style="--y: 60%; --size: 9px; --d: 1.64s; --delay: 1.00s"></span>
+          <span class="ember burst" style="--y: 67%; --size: 7px; --d: 2.29s; --delay: 1.19s"></span>
+          <span class="ember burst" style="--y: 74%; --size: 9px; --d: 1.59s; --delay: 0.88s"></span>
+          <span class="ember burst" style="--y: 80%; --size: 8px; --d: 2.19s; --delay: 1.38s"></span>
+          <!-- blagi topli naleti -->
+          <span class="gust" style="--y: 13%; --d: 9.0s; --delay: 1.9s"></span>
+          <span class="gust" style="--y: 22%; --d: 9.0s; --delay: 3.7s"></span>
+          <span class="gust" style="--y: 36%; --d: 6.1s; --delay: 2.3s"></span>
+          <span class="gust" style="--y: 48%; --d: 6.0s; --delay: 3.8s"></span>
+          <span class="gust" style="--y: 62%; --d: 7.2s; --delay: 2.0s"></span>
+          <span class="gust" style="--y: 70%; --d: 7.9s; --delay: 1.8s"></span>
+          <span class="gust" style="--y: 83%; --d: 7.9s; --delay: 2.2s"></span>
+          <!-- toplota koja se diže -->
+          <span class="ember" style="--x: 2%; --size: 6px; --d: 10.3s; --delay: 1.6s; --dx: -59px"></span>
+          <span class="ember" style="--x: 7%; --size: 7px; --d: 9.6s; --delay: 1.5s; --dx: -69px"></span>
+          <span class="ember" style="--x: 11%; --size: 5px; --d: 8.1s; --delay: 1.2s; --dx: -85px"></span>
+          <span class="ember" style="--x: 16%; --size: 7px; --d: 9.7s; --delay: 2.7s; --dx: 82px"></span>
+          <span class="ember" style="--x: 18%; --size: 6px; --d: 10.6s; --delay: 5.9s; --dx: -49px"></span>
+          <span class="ember" style="--x: 23%; --size: 5px; --d: 7.4s; --delay: 5.6s; --dx: -22px"></span>
+          <span class="ember" style="--x: 26%; --size: 10px; --d: 8.2s; --delay: 0.9s; --dx: -56px"></span>
+          <span class="ember" style="--x: 31%; --size: 6px; --d: 6.5s; --delay: 1.3s; --dx: 62px"></span>
+          <span class="ember" style="--x: 36%; --size: 6px; --d: 8.9s; --delay: 5.6s; --dx: 65px"></span>
+          <span class="ember" style="--x: 40%; --size: 4px; --d: 6.1s; --delay: 4.0s; --dx: 28px"></span>
+          <span class="ember" style="--x: 44%; --size: 9px; --d: 6.7s; --delay: 1.0s; --dx: 89px"></span>
+          <span class="ember" style="--x: 48%; --size: 4px; --d: 10.5s; --delay: 4.6s; --dx: -63px"></span>
+          <span class="ember" style="--x: 52%; --size: 11px; --d: 10.5s; --delay: 5.3s; --dx: 23px"></span>
+          <span class="ember" style="--x: 57%; --size: 4px; --d: 9.1s; --delay: 2.7s; --dx: -29px"></span>
+          <span class="ember" style="--x: 59%; --size: 5px; --d: 11.0s; --delay: 5.4s; --dx: 69px"></span>
+          <span class="ember" style="--x: 66%; --size: 11px; --d: 8.2s; --delay: 5.1s; --dx: -86px"></span>
+          <span class="ember" style="--x: 70%; --size: 4px; --d: 7.6s; --delay: 1.1s; --dx: -49px"></span>
+          <span class="ember" style="--x: 74%; --size: 5px; --d: 8.5s; --delay: 3.9s; --dx: 52px"></span>
+          <span class="ember" style="--x: 78%; --size: 9px; --d: 7.5s; --delay: 4.3s; --dx: -86px"></span>
+          <span class="ember" style="--x: 80%; --size: 9px; --d: 9.3s; --delay: 3.0s; --dx: -61px"></span>
+          <span class="ember" style="--x: 85%; --size: 8px; --d: 7.0s; --delay: 2.9s; --dx: -47px"></span>
+          <span class="ember" style="--x: 89%; --size: 9px; --d: 7.0s; --delay: 1.3s; --dx: 25px"></span>
+          <span class="ember" style="--x: 94%; --size: 8px; --d: 10.1s; --delay: 1.2s; --dx: 55px"></span>
+          <span class="ember" style="--x: 99%; --size: 10px; --d: 7.9s; --delay: 3.4s; --dx: 77px"></span>
+        </div>
+      </div>
+
       <div class="container">
         <div class="row align-items-center g-4 g-lg-5">
+          <!-- Klima uređaj (SVG) -->
+          <div class="col-12 col-lg-5 offset-lg-7 ac-col" aria-hidden="true">
+            <svg class="ac-unit" viewBox="0 0 320 132" focusable="false">
+              <defs>
+                <linearGradient id="acBody" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ffffff"/>
+                  <stop offset="1" stop-color="#dde8f3"/>
+                </linearGradient>
+                <linearGradient id="acAir" gradientUnits="userSpaceOnUse" x1="0" y1="70" x2="0" y2="132">
+                  <stop class="air-stop" offset="0" stop-color="#bfe8ff" stop-opacity=".95"/>
+                  <stop class="air-stop" offset="1" stop-color="#bfe8ff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <!-- mlaz vazduha -->
+              <g class="ac-air" fill="none" stroke="url(#acAir)" stroke-width="3" stroke-linecap="round">
+                <path d="M40 70 C 34 90, 46 106, 30 130"/>
+                <path d="M80 70 C 74 92, 88 108, 70 130"/>
+                <path d="M120 70 C 114 90, 128 106, 110 130"/>
+                <path d="M160 70 C 154 92, 168 108, 150 130"/>
+                <path d="M200 70 C 194 90, 208 106, 190 130"/>
+                <path d="M240 70 C 234 92, 248 108, 230 130"/>
+                <path d="M280 70 C 274 90, 288 106, 270 130"/>
+              </g>
+              <!-- kućište -->
+              <rect x="2" y="8" width="316" height="72" rx="16" fill="#8fa6be"/>
+              <rect x="2" y="2" width="316" height="74" rx="16" fill="url(#acBody)"/>
+              <g stroke="#cbd8e6" stroke-width="2" stroke-linecap="round">
+                <line x1="26" y1="14" x2="294" y2="14"/>
+                <line x1="26" y1="20" x2="294" y2="20"/>
+              </g>
+              <text x="26" y="44" class="ac-brand">DUAL ENERGY</text>
+              <text x="252" y="47" class="ac-temp ac-temp-cool">18°</text>
+              <text x="252" y="47" class="ac-temp ac-temp-heat">24°</text>
+              <circle class="ac-led" cx="294" cy="41" r="3.5"/>
+              <!-- otvor i lamela -->
+              <rect x="20" y="56" width="280" height="10" rx="5" fill="#33475e"/>
+              <rect class="ac-flap" x="20" y="56" width="280" height="10" rx="5" fill="#e9f0f7"/>
+            </svg>
+          </div>
+
           <div class="col-lg-7 text-white">
             <!-- TODO: grad / područje rada -->
             <span class="badge rounded-pill hero-badge mb-3">
@@ -196,6 +378,16 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Prekidač animacije: hlađenje / grejanje -->
+      <div class="season-toggle" role="group" aria-label="Animacija klime">
+        <button type="button" class="season-btn" data-season-value="cool" aria-pressed="false" aria-label="Hlađenje" title="Hlađenje">
+          <svg class="bi" aria-hidden="true"><use href="#i-snow2"/></svg><span class="d-none d-sm-inline">Hlađenje</span>
+        </button>
+        <button type="button" class="season-btn" data-season-value="heat" aria-pressed="false" aria-label="Grejanje" title="Grejanje">
+          <svg class="bi" aria-hidden="true"><use href="#i-sun-fill"/></svg><span class="d-none d-sm-inline">Grejanje</span>
+        </button>
       </div>
     </header>
 

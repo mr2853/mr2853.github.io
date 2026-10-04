@@ -84,7 +84,7 @@ body {
 
 /* ----- Hero ----- */
 .hero {
-  padding: 96px 0 48px;
+  padding: 96px 0 64px;
   background:
     radial-gradient(circle at 80% 20%, rgba(92, 200, 255, 0.25), transparent 50%),
     linear-gradient(135deg, var(--de-darker) 0%, var(--de-dark) 50%, #0b4f8a 100%);
@@ -145,7 +145,367 @@ body {
 @media (min-width: 992px) {
   .hero {
     min-height: 100vh;
-    padding: 120px 0 80px;
+    padding: 110px 0 72px;
+  }
+}
+
+/* ----- Animacija: klima i hladan vazduh ----- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  --ac-x: 50%;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-fx {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* talas hladnoće pri ulasku, posle ostaje blag sjaj */
+.hero-frost {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 75% 60% at var(--ac-x) 8%, rgba(191, 232, 255, 0.55), transparent 70%);
+  box-shadow: inset 0 0 140px 36px rgba(191, 232, 255, 0.4);
+  opacity: 0;
+  animation: frost 3.2s 0.5s ease-out forwards;
+}
+
+@keyframes frost {
+  0%   { opacity: 0; }
+  25%  { opacity: 1; }
+  100% { opacity: 0.25; }
+}
+
+/* naleti vetra */
+.gust {
+  position: absolute;
+  top: var(--y);
+  left: 0;
+  width: 45%;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, rgba(191, 232, 255, 0.5), transparent);
+  opacity: 0;
+  animation: gust var(--d, 6s) linear var(--delay, 0s) infinite;
+}
+
+.gust.blast {
+  height: 3px;
+  width: var(--w, 60%);
+  background: linear-gradient(90deg, transparent, rgba(225, 245, 255, 0.95), transparent);
+  box-shadow: 0 0 8px rgba(191, 232, 255, 0.6);
+  animation: gust var(--d, 1.4s) cubic-bezier(0.3, 0.6, 0.4, 1) var(--delay) 1;
+}
+
+@keyframes gust {
+  0%   { transform: rotate(-8deg) translateX(230%); opacity: 0; }
+  15%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: rotate(-8deg) translateX(-110%); opacity: 0; }
+}
+
+/* pahulje */
+.flake {
+  position: absolute;
+  top: -24px;
+  left: var(--x);
+  font-size: var(--size, 14px);
+  color: rgba(191, 232, 255, 0.75);
+  opacity: 0;
+  animation: flake var(--d, 9s) linear var(--delay, 0s) infinite;
+}
+
+@keyframes flake {
+  0%   { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.9; }
+  85%  { opacity: 0.9; }
+  100% { transform: translate3d(var(--dx, -60px), 105vh, 0) rotate(240deg); opacity: 0; }
+}
+
+/* pahulje koje nalet vetra pri ulasku nosi preko ekrana */
+.flake.burst {
+  top: var(--y);
+  left: 100%;
+  color: rgba(225, 245, 255, 0.9);
+  animation: flake-burst var(--d, 1.8s) cubic-bezier(0.25, 0.6, 0.4, 1) var(--delay, 0.6s) 1;
+}
+
+@keyframes flake-burst {
+  0%   { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 1; }
+  80%  { opacity: 0.9; }
+  100% { transform: translate3d(-115vw, 20vh, 0) rotate(420deg); opacity: 0; }
+}
+
+/* klima uređaj */
+.ac-col {
+  margin-bottom: -2.25rem;
+}
+
+.ac-unit {
+  display: block;
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.ac-brand {
+  font: 700 9px system-ui, sans-serif;
+  letter-spacing: 2px;
+  fill: #9fb3c8;
+}
+
+.ac-temp {
+  font: 600 15px system-ui, sans-serif;
+  fill: var(--ac-temp-color);
+  opacity: 0;
+  animation: fade-in 0.4s 0.3s forwards;
+}
+
+.ac-led {
+  fill: var(--ac-led);
+  opacity: 0.15;
+  animation: fade-in 0.3s 0.2s forwards;
+}
+
+.ac-flap {
+  animation: flap-open 0.7s 0.3s ease-out forwards;
+}
+
+.ac-air {
+  opacity: 0;
+  animation: fade-in 0.6s 0.7s forwards;
+}
+
+.ac-air path {
+  stroke-dasharray: 12 16;
+  animation: air-flow 1.1s linear infinite;
+}
+
+.ac-air path:nth-child(even) {
+  animation-duration: 1.4s;
+}
+
+@keyframes fade-in {
+  to { opacity: 1; }
+}
+
+@keyframes flap-open {
+  to { transform: translateY(9px); }
+}
+
+@keyframes air-flow {
+  to { stroke-dashoffset: -56; }
+}
+
+.ac-unit .air-stop {
+  stop-color: var(--ac-air);
+}
+
+@media (min-width: 992px) {
+  .hero {
+    --ac-x: 80%;
+  }
+
+  .ac-col {
+    margin-bottom: -5.5rem;
+  }
+
+  .ac-unit {
+    max-width: 400px;
+  }
+}
+
+/* ----- Sezona: hlađenje (podrazumevano) / grejanje ----- */
+.hero {
+  --ac-temp-color: #0d6efd;
+  --ac-led: #2fb4ff;
+  --ac-air: #bfe8ff;
+}
+
+[data-season="heat"] .hero {
+  --ac-temp-color: #e8590c;
+  --ac-led: #ff7a1a;
+  --ac-air: #ffb877;
+}
+
+/* topla pozadina se pretapa preko hladne */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(255, 150, 60, 0.28), transparent 50%),
+    linear-gradient(135deg, #1a0c06 0%, #3a1608 50%, #8f340d 100%);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+[data-season="heat"] .hero::before {
+  opacity: 1;
+}
+
+.fx-cool,
+.fx-heat {
+  position: absolute;
+  inset: 0;
+}
+
+/* sakriveni set efekata se ne crta; kada se prikaže, animacije kreću ispočetka */
+.fx-heat,
+[data-season="heat"] .fx-cool,
+.ac-temp-heat,
+[data-season="heat"] .ac-temp-cool {
+  display: none;
+}
+
+[data-season="heat"] .fx-heat {
+  display: block;
+}
+
+[data-season="heat"] .ac-temp-heat {
+  display: inline;
+}
+
+.hero-heat-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 75% 60% at var(--ac-x) 8%, rgba(255, 150, 70, 0.5), transparent 70%);
+  box-shadow: inset 0 0 140px 36px rgba(255, 120, 50, 0.35);
+  opacity: 0;
+  animation: frost 3.2s 0.5s ease-out forwards;
+}
+
+.fx-heat .gust {
+  background: linear-gradient(90deg, transparent, rgba(255, 176, 102, 0.5), transparent);
+}
+
+.fx-heat .gust.blast {
+  background: linear-gradient(90deg, transparent, rgba(255, 216, 150, 0.95), transparent);
+  box-shadow: 0 0 10px rgba(255, 140, 60, 0.7);
+}
+
+/* užarene čestice toplote koje se dižu */
+.ember {
+  position: absolute;
+  bottom: -16px;
+  left: var(--x);
+  width: var(--size, 8px);
+  height: var(--size, 8px);
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff3c4 0%, #ffb347 40%, rgba(255, 110, 40, 0) 70%);
+  opacity: 0;
+  animation: ember var(--d, 8s) ease-in var(--delay, 0s) infinite;
+}
+
+@keyframes ember {
+  0%   { transform: translate3d(0, 0, 0) scale(0.6); opacity: 0; }
+  15%  { opacity: 0.95; }
+  50%  { transform: translate3d(calc(var(--dx, 40px) * 0.5), -50vh, 0) scale(1.1); }
+  85%  { opacity: 0.7; }
+  100% { transform: translate3d(var(--dx, 40px), -100vh, 0) scale(0.4); opacity: 0; }
+}
+
+.ember.burst {
+  top: var(--y);
+  bottom: auto;
+  left: 100%;
+  animation: flake-burst var(--d, 1.8s) cubic-bezier(0.25, 0.6, 0.4, 1) var(--delay, 0.6s) 1;
+}
+
+/* prekidač hlađenje / grejanje u uglu */
+.season-toggle {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  z-index: 2;
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.season-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 36px;
+  height: 34px;
+  padding: 0 0.6rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.season-btn .bi {
+  font-size: 1rem;
+}
+
+.season-btn[aria-pressed="true"][data-season-value="cool"] {
+  background: #5cc8ff;
+  color: #061a2e;
+}
+
+.season-btn[aria-pressed="true"][data-season-value="heat"] {
+  background: #ff8a3d;
+  color: #1a0c06;
+}
+
+@media (min-width: 992px) {
+  .season-toggle {
+    right: 24px;
+    bottom: 20px;
+  }
+}
+
+/* animacija se pauzira kad hero nije na ekranu (js/main.js) */
+.hero.fx-paused .hero-fx *,
+.hero.fx-paused .ac-unit * {
+  animation-play-state: paused;
+}
+
+/* korisnici koji su isključili animacije na uređaju */
+@media (prefers-reduced-motion: reduce) {
+  .hero-fx *,
+  .ac-unit * {
+    animation: none !important;
+  }
+
+  .gust,
+  .flake,
+  .ember {
+    display: none;
+  }
+
+  .hero-frost,
+  .hero-heat-glow {
+    opacity: 0.3;
+  }
+
+  .ac-temp,
+  .ac-led,
+  .ac-air {
+    opacity: 1;
+  }
+
+  .ac-flap {
+    transform: translateY(9px);
   }
 }
 

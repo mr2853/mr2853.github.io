@@ -60,6 +60,19 @@ izbor u formi biće prilagođeni toj usluzi:
 Primer: oglasna grupa "servis klima" → `https://www.dualenergy.rs/?usluga=servis`.
 Tekstovi se menjaju u skripti odmah ispod naslova u `index.html`.
 
+## Animacija hlađenje / grejanje
+
+Hero deo automatski prikazuje animaciju po datumu:
+
+- **septembar - mart:** grejanje (topla pozadina, klima na 24°, topao vazduh)
+- **april - avgust:** hlađenje (plava pozadina, klima na 18°, pahulje)
+
+Prekidač ❄ / ☀ u donjem desnom uglu hero dela menja animaciju ručno. Link za prikaz klijentu:
+`?sezona=grejanje` ili `?sezona=hladjenje` na kraju adrese.
+
+Meseci se menjaju u skripti "Sezona animacije" u `<head>` delu `index.html`.
+Prekidač se uklanja brisanjem bloka `season-toggle` na kraju hero dela.
+
 ## Ikonice
 
 Ikonice su Bootstrap Icons, ugrađene direktno u stranicu (bez dodatnog učitavanja).
