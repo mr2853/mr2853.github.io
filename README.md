@@ -11,23 +11,38 @@ politika-privatnosti.html  - politika privatnosti (potrebna zbog forme i Google 
 css/style.css              - stilovi
 js/main.js                 - meni, forma, praćenje konverzija
 vendor/bootstrap/          - Bootstrap 5.3.3 (lokalno, zbog brzine)
-img/                       - slike i favicon
+img/                       - logo (SVG), favicon, ikonica za telefon, slika za deljenje linka
 alati/ikonice.py           - ugrađuje ikonice u stranice (videti dole)
+images/                    - izvorni fajlovi logoa (.ai, .eps, .pdf) - NE objavljuju se (.gitignore)
 ```
+
+## Logo i boje
+
+- `img/logo.svg` - glavni logo (crna slova), u meniju
+- `img/logo-white.svg` - bela slova i zelena ikonica, za tamno podnožje
+- `img/favicon.svg`, `img/apple-touch-icon.png` - ikonica u tabu i na početnom ekranu telefona
+- `img/og-image.jpg` - slika koja se prikazuje kada se link pošalje na Viber / Facebook
+
+Boje sajta su iz logoa: zelena `#8bc53f` (dugmad, sa crnim tekstom), tamnozelena `#3f6e14`
+(tekst na svetloj pozadini) i crna. Definisane su na vrhu `css/style.css`.
+
+## Adresa sajta
+
+Sajt je na `https://mr2853.github.io/`. Ako se pređe na sopstveni domen, adresu promeniti u
+`index.html`: `canonical`, `og:url`, `og:image` i u podacima za Google (`url`, `logo`, `image`).
 
 ## Pre objavljivanja
 
-U oba HTML fajla potražiti `TODO` i zameniti:
+U `index.html` potražiti `TODO` i dopuniti:
 
-- broj telefona (`+381600000000` / `060 000 0000`) - i u Viber / WhatsApp linkovima
-- email (`info@dualenergy.rs`)
-- grad / područje rada (`Beograd`)
-- naziv firme, adresu, PIB i matični broj u podnožju i u politici privatnosti
 - cene u cenovniku (`X.XXX`)
-- brojke u hero delu (10+, 2000+, 24h) i spisak brendova
-- linkove ka Facebook / Instagram profilu (ili ih obrisati)
-- `VAS_FORM_ID` u kontakt formi - napraviti besplatan nalog na https://formspree.io,
-  kreirati formu i upisati njen ID (upiti stižu na email)
+- spisak brendova sa kojima se radi (sekcija "Zašto mi")
+- `VAS_FORM_ID` u kontakt formi - napraviti besplatan nalog na https://formspree.io
+  (sa `dualenergyinstalacije@gmail.com`), kreirati formu i upisati njen ID
+- Google Ads ID i labele konverzija (videti dole)
+
+Proveriti sa klijentom i tvrdnje na sajtu: izlazak u roku od 24h, besplatna procena,
+radno vreme (Pon - Sub 08 - 20h), garancija i fiskalni račun.
 
 ## Google Ads
 

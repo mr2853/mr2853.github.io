@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0a2540"/>
-  <g stroke="#5cc8ff" stroke-width="4" stroke-linecap="round" fill="none">
-    <line x1="32" y1="12" x2="32" y2="52"/>
-    <line x1="14.7" y1="22" x2="49.3" y2="42"/>
-    <line x1="14.7" y1="42" x2="49.3" y2="22"/>
-    <polyline points="26,16 32,21 38,16"/>
-    <polyline points="26,48 32,43 38,48"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="11.88 7.86 196.56 196.56"><defs><linearGradient id="fg" gradientUnits="userSpaceOnUse" x1="64" y1="0" x2="184" y2="0"><stop offset="0" stop-color="#8bc53f"/><stop offset="1" stop-color="#000"/></linearGradient></defs><g transform="matrix(1,0,0,-1,0,216)"><path fill="#8bc53f" d="M15.875 109.897 47.366 55.251 77.97 109.82 47.722 164.466Z"/><path fill="url(#fg)" d="M63.298 192.19 101.977 122.739H133.606L110.316 164.558H142.348L172.811 109.859 142.348 55.16H110.316L133.606 96.978H101.977L63.298 27.528H158.586L204.439 109.859 158.586 192.19Z"/></g></svg>
